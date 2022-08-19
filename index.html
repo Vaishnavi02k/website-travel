@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Travel Website</title>
+
+	
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body onload="show() ;see();">
+	<nav>
+		<label class="logo">TravelX</label>
+		<ul>
+			<li><a href="#">Home Page</a></li>
+			<li><a href="#">About Us</a></li>
+			<li><a href="#">Places</a></li>
+			<li><a href="#">Pricing</a></li>
+			<li><a href="#">Staffs</a></li>
+			<li><a class="active" href="#">Contact Us</a></li>
+		</ul>
+	</nav>
+	
+	
+
+	
+	
+
+<!-- about us -->
+<section class="about">
+	<div class="container">
+		<div class="about-content">
+			<p class="about-subtitle">About Us</p>
+			<h2 class="section-title">Explore the World with Us</h2>
+			
+			<ul> 
+				<li class="about-item">
+	                <h3 class="item-title">Tour guide</h3>
+	                <p class="item-text">
+	                   Insights to make the most of the experience.
+	                 </p>
+	            </li>
+
+            	<li class="about-item">
+	                <h3 class="item-title">Friendly Price</h3>
+	                <p class="item-text">
+	                    Inexpensive,Cost-effective, and Low-priced.
+	                 </p>
+	            </li>
+               
+				<li class="about-item">
+	                <h3 class="item-title">Reliable Tour</h3>
+	                <p class="item-text">
+	                    Offers novel, authentic experiences
+	                 </p>
+	            </li>
+
+            </ul>
+		</div>
+	</div>
+	
+
+
+	<iframe class="about-video" width="885" height="498" src="https://www.youtube.com/embed/LgtU1h0ck58?autoplay=1&mute=1" title="Travel Agency Promotional Video - CreateStudio Example" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+	
+</section>
+<!--about us ends here-->
+
+<!--image slider start--> 
+	<section class="slider">
+      <div class="slides">
+        <!--radio buttons start-->
+        <input type="radio" name="radio-btn" id="radio1">
+        <input type="radio" name="radio-btn" id="radio2">
+        <input type="radio" name="radio-btn" id="radio3">
+        <input type="radio" name="radio-btn" id="radio4">
+        <!--radio buttons end-->
+        <!--slide images start-->
+        <div class="slide first">
+          <img src="5.jpg" alt="">
+        </div>
+        <div class="slide">
+          <img src="6.jpg" alt="">
+        </div>
+        <div class="slide">
+          <img src="7.jpg" alt="">
+        </div>
+        <div class="slide">
+          <img src="8.jpg" alt="">
+        </div>
+        <!--slide images end-->
+        <!--automatic navigation start-->
+        <div class="navigation-auto">
+          <div class="auto-btn1"></div>
+          <div class="auto-btn2"></div>
+          <div class="auto-btn3"></div>
+          <div class="auto-btn4"></div>
+        </div>
+        <!--automatic navigation end-->
+      </div>
+      <!--manual navigation start-->
+      <div class="navigation-manual">
+        <label for="radio1" class="manual-btn"></label>
+        <label for="radio2" class="manual-btn"></label>
+        <label for="radio3" class="manual-btn"></label>
+        <label for="radio4" class="manual-btn"></label>
+      </div>
+      <!--manual navigation end-->
+   </section>
+    <!--image slider end-->
+
+    <script type="text/javascript">
+    var counter = 1;
+    setInterval(function(){
+      document.getElementById('radio' + counter).checked = true;
+      counter++;
+      if(counter > 4){
+        counter = 1;
+      }
+    }, 5000);
+    </script>
+</p>
+
+
+
+
+<!--places we are offering-->
+<section class="section popular">
+		<h2 id="subtitle"> Most Visited Places</h2>
+		<table class="popular-list">
+			<tr><td>
+				<div class="card">
+					  <div class="card-image">
+					  	<img src="1.jpg">
+					  </div>
+					  <div class="card-text">
+					    <span class="date">4 days-3 night</span>
+					    <h2>Singapore</h2>
+					    <p>With its century-old temples, bustling hawker centres and lush green spaces</p>
+					  </div>  
+				</div>
+			</td>
+
+			<td>
+				<div class="card">
+				  <div class="card-image">
+				  	<img src="2.jpg" >
+				  </div>
+				  <div class="card-text">
+				    <span class="date">2 days- 2 nights</span>
+				    <h2>Bali</h2>
+				    <p>With epic tropical beauty, ancient temples, amazing food scene and vibrant nightlife</p>
+				  </div>
+				</div>
+			</td>
+
+			<td>
+				<div class="card">
+				  <div class="card-image">
+				  	<img src="3.jpg">
+				  </div>
+				  <div class="card-text">
+				    <span class="date">3 days-2 nights</span>
+				    <h2>Dubai</h2>
+				    <p>Famous for its unique attractions as Burj Khalifa,mega shopping malls, skyscrapers.</p>
+				  </div>
+				  
+				  </div>
+				</div>
+			</td>
+
+			<td>
+				<div class="card">
+				  <div class="card-image">
+				  	<img src="4.jpg">
+				  </div>
+				  <div class="card-text">
+				    <span class="date">3 days-2 nights</span>
+				    <h2>Paris</h2>
+				    <p>Most romantic city in the world, famous in movies, and other works of art</p>
+				  </div>
+				  
+				  </div>
+				</div>
+			</td>
+		</tr>
+	</table>
+</section>
+
+<!--places we are offering ends here-->
+<h1 class="main">Plan Your Trip <a href="https://www.tripadvisor.in/ForumHome">click </a>for more information
+	</h1>
+<!--pricing starts here-->
+
+	<div class="parent">
+		<div id="leftarrow" onclick="moveright()">  <!--i changed left and right-->
+			<button >&lt;</button>
+		</div>
+		<div class="child" id="c1">
+			<img src="9.jpg">
+			<div class="name">
+				<p class="name-city">Dubai</p>
+			</div>
+			<div class="price">
+				<p class="start"> starting from:</p>
+				<p class="money">Rs.18,990</p>
+			</div>
+		</div>
+
+		<div class="child" id="c2">
+			<img src="10.jpg">
+			<div class="name">
+				<p class="name-city">Singapore</p>
+			</div>
+			<div class="price">
+				<p class="start"> starting from:</p>
+				<p class="money">Rs.15,990</p>
+			</div>
+		</div>
+
+		<div class="child" id="c3">
+			<img src="11.jpg">
+			<div class="name">
+				<p class="name-city">Paris</p>
+			</div>
+			<div class="price">
+				<p class="start"> starting from:</p>
+				<p class="money">Rs.12,490</p>
+			</div>
+		</div>
+
+		<div class="child" id="c4">
+			<img src="12.jpg">
+			<div class="name">
+				<p class="name-city">Kerala</p>
+			</div>
+			<div class="price">
+				<p class="start"> starting from:</p>
+				<p class="money">Rs.8,990</p>
+			</div>
+		</div>
+
+		<div class="child" id="c5">
+			<img src="13.jpg">
+			<div class="name">
+				<p class="name-city">Bali</p>
+			</div>
+			<div class="price">
+				<p class="start"> starting from:</p>
+				<p class="money">Rs.10,900</p>
+			</div>
+		</div>
+
+		<div class="child" id="c6">
+			<img src="14.jpg">
+			<div class="name">
+				<p class="name-city">London</p>
+			</div>
+			<div class="price">
+				<p class="start"> starting from:</p>
+				<p class="money">Rs.18,990</p>
+			</div>
+		</div>
+
+		<div class="child" id="c7">
+			<img src="15.jpg">
+			<div class="name">
+				<p class="name-city">Manali</p>
+			</div>
+			<div class="price">
+				<p class="start"> starting from:</p>
+				<p class="money">Rs.8,990</p>
+			</div>
+		</div>
+
+		<div class="child" id="c8">
+			<img src="16.jpg">
+			<div class="name">
+				<p class="name-city">Rajasthan</p>
+			</div>
+			<div class="price">
+				<p class="start"> starting from:</p>
+				<p class="money">Rs.6,990</p>
+			</div>
+		</div>
+
+	
+
+
+		<div id="rightarrow" onclick="moveleft()">
+			<button> &gt;</button>
+		</div>
+
+	</div>
+	<script type="text/javascript">
+		var left=1;
+		var right=5;
+		function show(){
+			for(i=left;i<=right;i++){
+				document.getElementById("c"+i).style.display="inline-block";
+			}
+			
+		}
+
+		function moveleft(){
+
+			if (left<=3 && right<=7){
+				document.getElementById("c"+left).style.display="none";
+			left+=1;
+			right+=1;
+
+			for(i=left;i<=right;i++){
+				document.getElementById("c"+i).style.display="inline-block";
+			}
+
+			}
+			else
+				return;
+
+		}
+
+		function moveright(){
+			if (left>=2 && right>=6){
+				document.getElementById("c"+right).style.display="none";
+			left-=1;
+			right-=1;
+
+			for(i=left;i<=right;i++){
+				document.getElementById("c"+i).style.display="inline-block";
+			}
+
+			}
+			else
+				return;
+		}
+	</script>
+
+
+<!--pricing ends here-->
+
+<!--staff starts here-->
+
+<div id="information">
+<p id="our">Our Staff</p>
+<div class="managment">
+		<div onclick="rightmove()">  <!--i changed left and right-->
+			<button class="button" style="vertical-align:middle"><span>left</span></button>
+		</div>
+
+		<div class="staff" id="s1">
+			<img src="17.jpg">
+			<div class="staff-name">
+				<p class="specific"> Recruitment</p>
+				<div class="rating">
+				<p class="rating-star"> ⭐⭐⭐⭐</p>
+				</div>
+				<p class="discription">Takes the burden of sifting through a myriad of resumes from potential candidates from your plate, with a promise to only send you the best candidate recommendation. </p>
+			</div>
+			
+		</div>
+
+		<div class="staff" id="s2">
+			<img src="18.jpg">
+			<div class="staff-name">
+				<p class="specific">Project Staff</p>
+				<div class="rating">
+				<p class="rating-star"> ⭐⭐⭐⭐⭐</p>
+				</div>
+				<p class="discription">We maintain a talent pool of veteran travel agents with expertise in diverse fields from Entertainment Travel, Group Ticketing Agents, Destination Specialists, Meeting Planners.</p>
+			</div>
+			
+		</div>
+
+		<div class="staff" id="s3">
+			<img src="19.jpg">
+			<div class="staff-name">
+				
+				<p class="specific">Temp Staff</p>
+				<div class="rating">
+				<p class="rating-star"> ⭐⭐⭐⭐</p>
+				</div>
+				<p class="discription">Travel agents (Corporate or Leisure), Ticketing Agents, Support Agents, & TRAMS specialists. Assignments are filled with a minimum, one-month requirement.</p>
+			</div>
+			
+		</div>
+
+		<div class="staff" id="s4">
+			<img src="20.jpg">
+			<div class="staff-name">
+				<p class="specific">Ecxecutive Search</p>
+				<div class="rating">
+				<p class="rating-star">⭐⭐⭐⭐</p>
+				</div>
+				<p class="discription">our exclusive resource to help you find top-tier travel & hospitality talent for management and directorship positions in your company.</p>
+			</div>
+			
+		</div>
+
+		<div class="staff" id="s5">
+			<img src="21.jpg">
+			<div class="staff-name">
+				<p class="specific">Guide</p>
+				<div class="rating">
+				<p class="rating-star"> ⭐⭐⭐⭐⭐</p>
+				</div>
+				<p class="discription">You can hire your personal Guide Based on your choices and requirments.</p>
+			</div>
+			
+		</div>
+
+		<div id="arrowright" onclick="leftmove()">
+			<button class="button" style="vertical-align:middle"><span>right</span></button>
+		</div>
+
+	</div>
+
+	<script type="text/javascript">
+		var l=1;
+		var r=1;
+		function see(){
+			for(i=l;i<=r;i++){
+				document.getElementById("s"+i).style.display="inline-block";
+			}
+			
+		}
+
+		function leftmove(){
+
+			if (l<=4 && r<=4){
+				document.getElementById("s"+l).style.display="none";
+			l+=1;
+			r+=1;
+
+			for(i=l;i<=r;i++){
+				document.getElementById("s"+i).style.display="inline-block";
+			}
+
+			}
+			else
+				return;
+
+		}
+
+		function rightmove(){
+			if (l>=2 && r>=2){
+				document.getElementById("s"+r).style.display="none";
+			l-=1;
+			r-=1;
+
+			for(i=l;i<=r;i++){
+				document.getElementById("s"+i).style.display="inline-block";
+			}
+
+			}
+			else
+				return;
+		}
+	</script>
+
+	
+
+<!--staff ends here-->
+
+
+<!--Contact Us Start here-->
+
+
+<div class="contact">
+	<p id="heading">Get In Touch</p>
+  <form action="action_page.php">
+
+    <label for="fname">First Name</label>
+    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+    <label for="lname">Last Name</label>
+    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+    <label for="country">Country</label>
+    <select id="country" name="country">
+      <option value="India">India</option>
+      <option value="other">other</option>
+    </select>
+
+    <label for="subject">Subject</label>
+    <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+    <input type="submit" value="Submit">
+
+  </form>
+</div>
+
+<div class="contact-us"> 
+	
+	
+	<div class="contact-info">
+	<h2>ADDRESS</h2>
+	<p>Northern Colorado Office<br>
+	6775 Sherman Street,<br>
+	Loveland, CO 80538</p>
+	</div>
+
+	<div class="contact-info">
+		<h2>PHONE</h2>
+		<p>Weifield 24/7 Service Department<br>
+			877.TRAVELX<br>
+			(Then press 0 for emergency calls)</p>
+	</div>
+
+	<div class="contact-info">
+		<h2>EMAIL</h2>
+		<p>Info@travelxgroup.com</p>
+	<!-- Add icon library -->	
+	</div>
+		<div class="s-logo">	
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+		<!-- Add font awesome icons -->
+
+		<a href="https://about.facebook.com/" class="fa fa-facebook"></a>
+		<a href="https://myaccount.google.com/?utm_source=account-marketing-page&utm_medium=go-to-account-button&pli=1"class="fa fa-google"></a>
+		<a href="https://www.instagram.com/littlecutie025/" class="fa fa-instagram"></a>
+	</div>
+	
+
+</div>
+</div>
+
+
+
+
+</body>
+</html>
