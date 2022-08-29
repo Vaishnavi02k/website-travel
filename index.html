@@ -12,25 +12,92 @@
 	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body onload="show() ;see();">
-	<nav>
-		<label class="logo">TravelX</label>
+	<nav class="navbar"> 
+		<label class="logo"><h1 style="color:#FDD037 ;">World</h1><h1>Explore</h1></label>
 		<ul>
-			<li><a href="#">Home Page</a></li>
-			<li><a href="#">About Us</a></li>
-			<li><a href="#">Places</a></li>
-			<li><a href="#">Pricing</a></li>
-			<li><a href="#">Staffs</a></li>
-			<li><a class="active" href="#">Contact Us</a></li>
+			<li><a class="active" href="#home">Home Page</a></li>
+			<li><a href="#about">About Us</a></li>
+			<li><a href="#places">Places</a></li>
+			<li><a href="#pricing">Pricing</a></li>
+			<li><a href="#staffs">Staffs</a></li>
+			<li><a href="#contact">Contact Us</a></li>
 		</ul>
 	</nav>
 	
-	
+	<section class="slideshow" id="home">
+		<div class="mask">
+			<div class="lower-heading">
+				<strong> EXPLORE</strong>
+			</div>
+			<div class="upper-heading">
+				The WORLD YOU HAVE NEVER SEEN
+			</div>
+		<div class="content">
+			Have Stories To Tell...
+		</div>
+		</div>
+		
+		
+	</section>
 
-	
-	
+
+<!-- image slider start 
+	<section class="slider" id="home">
+      <div class="slides">-->
+        <!--radio buttons start-->
+        <!-- <input type="radio" name="radio-btn" id="radio1">
+        <input type="radio" name="radio-btn" id="radio2">
+        <input type="radio" name="radio-btn" id="radio3">
+        <input type="radio" name="radio-btn" id="radio4"> -->
+        <!--radio buttons end-->
+        <!--slide images start-->
+        <!-- <div class="slide first">
+          <img src="5.jpg" alt="">
+        </div>
+        <div class="slide">
+          <img src="6.jpg" alt="">
+        </div>
+        <div class="slide">
+          <img src="7.jpg" alt="">
+        </div>
+        <div class="slide">
+          <img src="8.jpg" alt="">
+        </div> -->
+        <!--slide images end-->
+        <!--automatic navigation start-->
+        <!-- <div class="navigation-auto">
+          <div class="auto-btn1"></div>
+          <div class="auto-btn2"></div>
+          <div class="auto-btn3"></div>
+          <div class="auto-btn4"></div>
+        </div> -->
+        <!--automatic navigation end-->
+      <!-- </div> -->
+      <!--manual navigation start-->
+      <!-- <div class="navigation-manual">
+        <label for="radio1" class="manual-btn"></label>
+        <label for="radio2" class="manual-btn"></label>
+        <label for="radio3" class="manual-btn"></label>
+        <label for="radio4" class="manual-btn"></label>
+      </div> -->
+      <!--manual navigation end-->
+   <!-- </section> -->
+    <!--image slider end-->
+
+    <!-- <script type="text/javascript">
+    var counter = 1;
+    setInterval(function(){
+      document.getElementById('radio' + counter).checked = true;
+      counter++;
+      if(counter > 4){
+        counter = 1;
+      }
+    }, 5000);
+    </script>
+</p>  -->
 
 <!-- about us -->
-<section class="about">
+<!-- <section class="about" id="about">
 	<div class="container">
 		<div class="about-content">
 			<p class="about-subtitle">About Us</p>
@@ -66,137 +133,72 @@
 
 	<iframe class="about-video" width="885" height="498" src="https://www.youtube.com/embed/LgtU1h0ck58?autoplay=1&mute=1" title="Travel Agency Promotional Video - CreateStudio Example" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 	
-</section>
+</section> -->
 <!--about us ends here-->
-
-<!--image slider start--> 
-	<section class="slider">
-      <div class="slides">
-        <!--radio buttons start-->
-        <input type="radio" name="radio-btn" id="radio1">
-        <input type="radio" name="radio-btn" id="radio2">
-        <input type="radio" name="radio-btn" id="radio3">
-        <input type="radio" name="radio-btn" id="radio4">
-        <!--radio buttons end-->
-        <!--slide images start-->
-        <div class="slide first">
-          <img src="5.jpg" alt="">
-        </div>
-        <div class="slide">
-          <img src="6.jpg" alt="">
-        </div>
-        <div class="slide">
-          <img src="7.jpg" alt="">
-        </div>
-        <div class="slide">
-          <img src="8.jpg" alt="">
-        </div>
-        <!--slide images end-->
-        <!--automatic navigation start-->
-        <div class="navigation-auto">
-          <div class="auto-btn1"></div>
-          <div class="auto-btn2"></div>
-          <div class="auto-btn3"></div>
-          <div class="auto-btn4"></div>
-        </div>
-        <!--automatic navigation end-->
-      </div>
-      <!--manual navigation start-->
-      <div class="navigation-manual">
-        <label for="radio1" class="manual-btn"></label>
-        <label for="radio2" class="manual-btn"></label>
-        <label for="radio3" class="manual-btn"></label>
-        <label for="radio4" class="manual-btn"></label>
-      </div>
-      <!--manual navigation end-->
-   </section>
-    <!--image slider end-->
-
-    <script type="text/javascript">
-    var counter = 1;
-    setInterval(function(){
-      document.getElementById('radio' + counter).checked = true;
-      counter++;
-      if(counter > 4){
-        counter = 1;
-      }
-    }, 5000);
-    </script>
-</p>
-
-
 
 
 <!--places we are offering-->
-<section class="section popular">
-		<h2 id="subtitle"> Most Visited Places</h2>
-		<table class="popular-list">
-			<tr><td>
-				<div class="card">
-					  <div class="card-image">
-					  	<img src="1.jpg">
-					  </div>
-					  <div class="card-text">
-					    <span class="date">4 days-3 night</span>
-					    <h2>Singapore</h2>
-					    <p>With its century-old temples, bustling hawker centres and lush green spaces</p>
-					  </div>  
-				</div>
-			</td>
+<section class="places" id="places">
+		<div class="places-lower-heading"> 
+			TOURS
+		</div>
+		<div class="places-upper-heading">
+			ENJOY THE JOURNEY
+		</div>
 
-			<td>
-				<div class="card">
-				  <div class="card-image">
-				  	<img src="2.jpg" >
-				  </div>
-				  <div class="card-text">
-				    <span class="date">2 days- 2 nights</span>
-				    <h2>Bali</h2>
-				    <p>With epic tropical beauty, ancient temples, amazing food scene and vibrant nightlife</p>
-				  </div>
+		<div class="popular-list">
+			<div class="card">
+				<div class="card-text">
+					<span class="date">4 days-3 night</span>
+				    <h2>Singapore</h2>
+				    <!-- <p>With its century-old temples, bustling hawker centres and lush green spaces</p> -->
+					</div> 
+				  <!-- <div class="card-image"> -->
+				  	<img src="1.jpg">
+					<!-- </div> -->
+				     
+			</div>
+			<div class="card">
+				<div class="card-text">
+				<span class="date">2 days- 2 nights</span>
+				<h2>Bali</h2>
+				<!-- <p>With epic tropical beauty, ancient temples, amazing food scene and vibrant nightlife</p> -->
 				</div>
-			</td>
-
-			<td>
-				<div class="card">
-				  <div class="card-image">
-				  	<img src="3.jpg">
-				  </div>
-				  <div class="card-text">
-				    <span class="date">3 days-2 nights</span>
-				    <h2>Dubai</h2>
-				    <p>Famous for its unique attractions as Burj Khalifa,mega shopping malls, skyscrapers.</p>
-				  </div>
-				  
-				  </div>
+		  	    <!-- <div class="card-image"> -->
+			  	<img src="2.jpg" >
+		 	    <!-- </div> -->
+				
+			</div>
+			<div class="card">
+				<div class="card-text">
+					<span class="date">3 days-2 nights</span>
+					<h2>Dubai</h2>
+					<!-- <p>Famous for its unique attractions as Burj Khalifa,mega shopping malls, skyscrapers.</p> -->
+					</div>
+		    	<!-- <div class="card-image"> -->
+			  	<img src="3.jpg">
+				<!-- </div> -->
+				
+			</div>
+			<div class="card">
+				<div class="card-text">
+				<span class="date">3 days-2 nights</span>
+				<h2>Paris</h2>
+				<!-- <p>Most romantic city in the world, famous in movies, and other works of art</p> -->
 				</div>
-			</td>
-
-			<td>
-				<div class="card">
-				  <div class="card-image">
-				  	<img src="4.jpg">
-				  </div>
-				  <div class="card-text">
-				    <span class="date">3 days-2 nights</span>
-				    <h2>Paris</h2>
-				    <p>Most romantic city in the world, famous in movies, and other works of art</p>
-				  </div>
-				  
-				  </div>
-				</div>
-			</td>
-		</tr>
-	</table>
+				<!-- <div class="card-image"> -->
+				<img src="4.jpg">
+				<!-- </div> -->
+			</div>
+		</div>
 </section>
 
 <!--places we are offering ends here-->
-<h1 class="main">Plan Your Trip <a href="https://www.tripadvisor.in/ForumHome">click </a>for more information
-	</h1>
+
 <!--pricing starts here-->
 
-	<div class="parent">
-		<div id="leftarrow" onclick="moveright()">  <!--i changed left and right-->
+	<div class="parent" id="pricing">
+		<div id="leftarrow" onclick="moveright()" >  <!--i changed left and right-->
 			<button >&lt;</button>
 		</div>
 		<div class="child" id="c1">
@@ -343,8 +345,8 @@
 
 <!--staff starts here-->
 
-<div id="information">
-<p id="our">Our Staff</p>
+<div id="information" >
+<p id="staffs">Our Staff</p>
 <div class="managment">
 		<div onclick="rightmove()">  <!--i changed left and right-->
 			<button class="button" style="vertical-align:middle"><span>left</span></button>
@@ -465,10 +467,10 @@
 <!--staff ends here-->
 
 
-<!--Contact Us Start here-->
+<!--Contact Us Form Start here-->
 
 
-<div class="contact">
+<div class="contact" id="contact">
 	<p id="heading">Get In Touch</p>
   <form action="action_page.php">
 
@@ -492,44 +494,43 @@
   </form>
 </div>
 
-<div class="contact-us"> 
-	
-	
-	<div class="contact-info">
-	<h2>ADDRESS</h2>
-	<p>Northern Colorado Office<br>
-	6775 Sherman Street,<br>
-	Loveland, CO 80538</p>
-	</div>
+<!-- contact form ends here -->
 
-	<div class="contact-info">
-		<h2>PHONE</h2>
-		<p>Weifield 24/7 Service Department<br>
-			877.TRAVELX<br>
-			(Then press 0 for emergency calls)</p>
-	</div>
+<!-- footer starts here -->
+<footer>
+	<div>
+		Did you know that..
+		<p>
+			When you purchase something through our links we earn a small fee. However ,you still pay same. Win-Win!
+		</p>
+		<div>Find Hotels via Booking.com</div>
+		<div>Find rental car via Sunny Cars</div>
+		<div>Find Cheap Flights via Skyscanner</div>
+		<div>Get a Travel Insurance via Heymondo</div>
 
-	<div class="contact-info">
-		<h2>EMAIL</h2>
-		<p>Info@travelxgroup.com</p>
+	</div>
+	<div class="s-logo">
 	<!-- Add icon library -->	
-	</div>
-		<div class="s-logo">	
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-		<!-- Add font awesome icons -->
+	<!-- Add font awesome icons -->
 
-		<a href="https://about.facebook.com/" class="fa fa-facebook"></a>
-		<a href="https://myaccount.google.com/?utm_source=account-marketing-page&utm_medium=go-to-account-button&pli=1"class="fa fa-google"></a>
-		<a href="https://www.instagram.com/littlecutie025/" class="fa fa-instagram"></a>
-	</div>
-	
-
-</div>
+	 <a href="https://about.facebook.com/" class="fa fa-facebook"></a>
+	<a href="https://myaccount.google.com/?utm_source=account-marketing-page&utm_medium=go-to-account-button&pli=1"class="fa fa-google"></a>
+	<a href="https://www.instagram.com/littlecutie025/" class="fa fa-instagram"></a>
 </div>
 
+<div class="contact-us">
+	<h1>Contact Us</h1>
+	<div class="contact-email"> Info@travelxgroup.com</div>
+	<div class="contact-number">+1(123)800-890</div>
+	<div class="contact-address">Northern Colorado Office<br>
+		6775 Sherman Street,<br>
+		Loveland, CO 80538</div>
+</div>
 
+</footer>
 
-
+<!-- footer ends here -->
 </body>
 </html>

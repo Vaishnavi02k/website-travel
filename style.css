@@ -9,22 +9,33 @@
 	text-decoration: none;
 	list-style: none;
 	box-sizing: border-box;
+	scroll-behavior: smooth;
 }
 body{
-	background-color:#dce2f7;
+	background-color:#d9d8d7;
+
 }
-nav{
-	background:#0b247d;
+.navbar{
+	background:#00000099;
+	position: fixed;
 	height: 80px;
-	height: 100%;
+	width: 100%;
+	display: flex;
+	justify-content:space-between;
+	z-index: 2; 
 }
 
 label.logo{
 	color:white;
 	font-size: 35px;
 	line-height: 80px;
-	padding: 0 100px;
+	padding: 0 50px;
 	font-weight: bold;
+}
+
+label.logo h1{
+   display: inline-block;
+   font-size: 40px;
 }
 
 nav ul{
@@ -49,19 +60,119 @@ nav ul li a{
 }
 
 a.active,a:hover{
-	background: #08034a;
-	color:rgba(250, 242, 7,0.8);
+	transition: background 0.3s;
+	background: #ffffff99;
+	color:rgba(0,0,0,0.6);
+}
+
+/* slideshow starts here */
+
+@keyframes slider {
+    0% {
+        background-image: url("./5.jpg");
+    }
+
+    10% {
+        background-image: url("./5.jpg");
+    }
+
+    25% {
+        background-image: url("./6.jpg");
+    }
+
+    35% {
+        background-image: url("./6.jpg");
+    }
+
+    50% {
+        background-image: url("./7.jpg");
+    }
+
+    60% {
+        background-image: url("./7.jpg");
+    }
+
+	75% {
+		background-image: url("./8.jpg");
+	}
+
+	85% {
+		background-image: url("./8.jpg");
+	}
+	100%{
+		background-image: url("./5.jpg");
+	}
 }
 
 
-/*slider*/
+
+.slideshow{
+	
+	width: 100%;
+	height: 700px;
+	padding-top: 80px;
+	background-repeat: no-repeat;
+	background-size: 100% 120%;
+    background-clip: border-box;
+	animation: slider 7s infinite;
+	/* filter: brightness(0.4);  */
+}
+
+.mask{
+	width: 100%;
+	height: 100%;
+	margin: 0px;
+	background-color: rgb(0, 0, 0, 0.4);
+	
+}
+
+.lower-heading{
+	position: absolute;
+	transform: translate(-50%);
+	text-align: center;
+	top:50%;
+	left:50%;
+	color: #FDD037 ;
+	opacity: 0.8;
+	font-size: 140px;
+	/* background: #00000099; */
+	opacity: 0.75;	
+}
+
+.upper-heading{
+	position: absolute;
+	transform: translate(-50%);
+	margin-top: 0.5%;
+	color:#fff;
+	top:68%;
+	left:50%;
+	font-size: 40px;
+	opacity: 0.75;
+		
+}
+
+.content{
+	position: absolute;
+	transform: translate(-50%);
+	top:20%;
+	left:50%;
+	font-size: 30px;
+	color:#fff;
+	/* background-color: rgb(0, 0, 0,0.3); */
+	opacity: 0.9;
+}
+
+/* slide show ends here */
+
+
+/* slider
 
 .slider{
   width: 60%;
-  height: 500px;
+  height: 600px;
   border-radius: 10px;
   overflow: hidden;
-  padding: 20px 40px 20px 100px;
+  padding: 120px 40px 20px 100px;
 
   
 }
@@ -92,7 +203,7 @@ a.active,a:hover{
 
 /*css for manual slide navigation*/
 
-.navigation-manual{
+/* .navigation-manual{
   position: absolute;
   width: 800px;
   margin-top: -40px;
@@ -134,7 +245,7 @@ a.active,a:hover{
 
 /*css for automatic navigation*/
 
-.navigation-auto{
+/* .navigation-auto{
   position: absolute;
   display: flex;
   width: 800px;
@@ -178,94 +289,20 @@ a.active,a:hover{
 .main:hover{
 	transform: scale(1.5);
 	color:#0b247d;
-}
+}  */
 
 
 
-/*card*/
-.popular-list{
-	padding:30px 0 30px 70px;
-}
-
-#subtitle{
-	margin:0;
-	text-transform: capitalize;
-	font-family: 'Oleo Script Swash Caps', cursive;
-	font-size: 2em;
-	text-align:center;
-	color: #0b247d;
-	margin-top: 100px;
-
-}
-
-.card {
-  display: grid;
-  grid-template-columns: 100%;
-  grid-template-rows: 50% 95%;
-  grid-template-areas: "image" "text";
-
-  border-radius: 20px;
-  background: white;
-  box-shadow: 5px 5px 15px rgba(0,0,0,0.9);
-  font-family: sans-serif;
-  text-align: justify-all;
-}
-
-.card-text {
-  grid-area: text;
-  margin: 25px;
-}
-.card-text .date {
-  text-align: left;
-  font-family: 'Shadows Into Light', cursive;
-  color: rgb(255, 7, 110);
-  font-size:20px;
-}
-.card-text p {
-  color: grey;
-  font-family: 'Shadows Into Light', cursive;
-  font-size:15px;
-  font-weight: 300;
-  margin-bottom: 10px;
-}
-.card-text h2 {
-  font-family: 'Shadows Into Light', cursive;
-  text-transform: uppercase;
-  font-weight: 800;
-  margin-top:0px;
-  font-size:28px;
-  text-align: center;
-}
-
-.card img{
-	border-radius: 15px;
-	width: 95%;
-    height: 180px;
-	padding:10px;
-	background: cover;
-	
-}
-
-.card:hover {
-  transform: scale(1.35);
-  box-shadow: 5px 5px 15px rgba(0,0,0,0.6);
-  padding-bottom: 10px;
-}
-.card {
-  transition: 0.5s ease;
-  cursor: pointer;
-  margin:20px;
-}
 
 /*about-us*/
-
+/* 
 .about{
 	display:flex;
-	flex-direction:column;
+	justify-content: space-between;
 	text-align:justify-all;
 	box-sizing: border-box;
-	margin:10px;
-	float: right;
+	padding: 80px 50px 50px;
+	
 
 	
 }
@@ -297,9 +334,150 @@ a.active,a:hover{
 	margin: 20px;
 	height:250px;
 	width:400px;
+} */
+
+
+
+
+/*card*/
+.popular-list{
+	
+	padding:150px 0 50px 0px;
+	display: inline-flex;
+	justify-content: space-around;
 }
 
+.card{
+	width: 20%;
+	display: inline-flex;
+	border-radius: 20px;
+}
 
+.card img{
+	width: 100%;
+	/* margin: 20px; */
+	border-radius: 20px;
+	/* filter:brightness(0.6); */
+}
+
+.card-text {
+	width: 16%;
+	position: absolute;
+	padding: 4% 2%;
+	color: #fff;
+	/* z-index: 1; */
+	/* overflow: hidden;
+    text-overflow: ellipsis; */
+	/* overflow: hidden; */
+}
+
+.places-lower-heading{
+	position: absolute;
+	transform: translate(-50%);
+	top:101%;
+	left:50%; 
+	color: #FDD037 ;
+	opacity: 0.9;
+	font-size: 90px;
+	opacity: 0.6;	
+}
+
+.places-upper-heading{
+	position: absolute;
+	transform: translate(-50%);
+	top:106%;
+	left:50%;
+	font-size: 28px;
+	opacity: 0.8;
+		
+}
+.card:hover {
+	transform: scale(1.1);
+	box-shadow: 5px 5px 5px rgba(0,0,0,0.6);
+	
+  }
+  .card {
+	transition: 0.5s ease;
+	cursor: pointer;
+	
+  } 
+
+
+
+
+
+/* 
+.card {
+  /* display: grid; */
+  /* grid-template-columns: 100%;
+  grid-template-rows: 50% 95%;
+  grid-template-areas: "image" "text"; */
+/* 
+  border-radius: 20px;
+  background: white;
+  box-shadow: 5px 5px 15px rgba(0,0,0,0.9);
+  font-family: sans-serif;
+  text-align: justify-all;
+  height: 500px;
+  width: 50%;
+} */
+/* 
+.card-text {
+  grid-area: text;
+  margin: 25px;
+  position: absolute;
+  z-index: 1;
+}
+.card-text .date {
+  text-align: left;
+  font-family: 'Shadows Into Light', cursive;
+  color: rgb(255, 7, 110);
+  font-size:20px;
+} */
+/* .card-text p {
+  color: grey;
+  font-family: 'Shadows Into Light', cursive;
+  font-size:15px;
+  font-weight: 300;
+  margin-bottom: 10px;
+} */
+/* .card-text h2 {
+  font-family: 'Shadows Into Light', cursive;
+  text-transform: uppercase;
+  font-weight: 800;
+  margin-top:0px;
+  font-size:28px;
+  text-align: center;
+} */
+/* 
+.card-image {
+	width: 100%;
+	height: 100%;
+} */
+/* .card img{
+	border-radius: 15px;
+	max-width: 100%;
+    max-height: 100%; */
+	/* height: 480px; */
+	/* padding:10px; */
+	/* background: cover; */
+	/* object-fit: cover; */
+	
+/* } */
+/* 
+.card:hover {
+  transform: scale(1.1);
+  box-shadow: 5px 5px 15px rgba(0,0,0,0.6);
+  padding-bottom: 10px;
+}
+.card {
+  transition: 0.5s ease;
+  cursor: pointer;
+  margin:20px;
+} */
+
+
+ */
 
 
 
@@ -473,15 +651,15 @@ a.active,a:hover{
 
 /* Style inputs with type="text", select elements and textareas */
 input[type=text], select, textarea {
-  width: 100%; /* Full width */
-  padding: 12px; /* Some padding */ 
-  border: 1px solid #ccc; /* Gray border */
-  border-radius: 4px; /* Rounded borders */
-  box-sizing: border-box; /* Make sure that padding and width stays in place */
-  margin-top: 6px; /* Add a top margin */
-  margin-bottom: 16px; /* Bottom margin */
-  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
-}
+  width: 100%; /*Full width  */
+  padding: 12px; /*Some padding   */
+  border: 1px solid #ccc; /*Gray border */
+   box-sizing: border-box; border-radius: 4px; /* Rounded borders */
+   /* Make sure that padding and width stays in place
+  /* margin-top: 6px; Add a top margin */
+  /* margin-bottom: 16px; Bottom margin */
+  /* resize: vertical Allow the user to vertically resize the textarea (not horizontally) */
+ } 
 
 /* Style the submit button with a specific background color etc */
 input[type=submit] {
@@ -547,10 +725,20 @@ input[type=submit]:hover {
 /* Add a hover effect if you want */
 .fa:hover {
   transform: scale(1.5);
-}
+}  
 
+/* footer starts here */
+footer {
+	text-align: center;
+	padding: 3px;
+	background-color: DarkSalmon;
+	color: white;
+	
+    display: table-row;
+    height: 0;
+  }
 
-@media only screen and (max-width: 700px){
+/* @media only screen and (max-width: 700px){
 		nav ul{
 		width: 100%;
 		background: #0b247d;
@@ -559,7 +747,7 @@ input[type=submit]:hover {
 		right: 0;
 		z-index: 2;	
 		}	
-}
+} */
 
 
 
