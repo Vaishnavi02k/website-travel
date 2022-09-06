@@ -22,7 +22,7 @@ body{
 	width: 100%;
 	display: flex;
 	justify-content:space-between;
-	z-index: 2; 
+	z-index: 5; 
 }
 
 label.logo{
@@ -56,11 +56,12 @@ nav ul li a{
 	padding: 7px 13px;
 	border-radius: 3px;
 	text-transform: uppercase;
+	transition: background 0.3s;
+
 
 }
 
 .nav-link.active,.nav-link:hover{
-	transition: background 0.3s;
 	background: #ffffff99;
 	color:rgba(0,0,0,0.6);
 }
@@ -359,7 +360,7 @@ nav ul li a{
 	width: 100%;
 	/* margin: 20px; */
 	border-radius: 20px;
-	filter:brightness(0.8);
+	/* filter:brightness(0.5); */
 	transition: 0.5s all ease-in-out;
 }
 
@@ -496,7 +497,7 @@ nav ul li a{
 } */
 
 
- */
+ /* */
 
 
 
@@ -505,9 +506,9 @@ nav ul li a{
 
 .parent{
 	display: flex;
-	justify-content: space-between;
+	justify-content: space-evenly;
 	align-items: center;
-	height: 500px;
+	/* height: 400px; */
 	flex-direction: row;
 }
 
@@ -516,36 +517,54 @@ nav ul li a{
 	margin-left: 10px;
 	margin-right: 10px;
 	display: none; 
-	border: 5px double #0b247d;
-	background-color: white;
+	background-color: #fff;
 	margin-bottom: 50px;
+	/* background-color: blue; */
+	box-shadow: 0px 0px 10px rgb(0, 0, 0, 0.4);
+	border-radius: 20px;
+
 }
 
 .child img{
 	height: 200px;
 	width: 100%;
-	padding: 20px;
+	/* padding: 20px; */
+	border-top-right-radius: 20px;
+	border-top-left-radius: 20px;
 }
 
 #leftarrow , #rightarrow{
 	/* margin-left: 12px;
 	width: 3%; */
-	display: inline-flex;
+	display: inline-flex;	
 }
 
 #leftarrow button, #rightarrow button{
 	font-weight: bold;
 	cursor: pointer;
-	font-size: 15px;
+	font-size: 18px;
+	padding: 8px;
+	border-radius: 100%;
+	transition: all 0.2s;
+}
+
+#leftarrow button:hover, #rightarrow button:hover{
+	box-shadow: 5px 5px 5px rgba(0,0,0,0.6);
+}
+
+.name-and-price{
+	display: flex;
+	/* flex-direction: row; */
+	justify-content: center;
 }
 
 .price{
-	float: right;
+	/* float: right; */
 	padding: 0 20px 10px 0px;
 }
 
 .name{
-	float:left;
+	/* float:left; */
 	padding: 0 0px 10px 20px;
 	cursor: pointer;
 	
@@ -569,6 +588,34 @@ nav ul li a{
 	font-family: 'Lora', serif;
 }
 
+.rating-review-section{
+	padding: 0 20px 10px 20px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	margin-top: 20px;
+}
+
+.pricing-see-more{
+	display: flex;
+	justify-content: center;
+	margin-top: 20px;
+}
+
+.pricing-see-more a{
+	padding: 10px;
+	margin-bottom: 30px;
+	font-size: 15px;
+	transition: all 0.3s;
+	border-radius: 10px;
+	border: 2px solid #000;
+}
+
+.pricing-see-more a:hover{
+	background-color: black;
+	color: #fff;
+
+}
 
 #information{
 	display: flex;
@@ -964,11 +1011,11 @@ input[type=submit]:hover {
 	margin: 10px;
 	margin-top:40px;
 	transition: color 0.3s;
-	color:#fff;
+	color: #FDD037;
 }
 
 .social-logo:hover{
-	color: #FDD037;
+	color: limegreen;
 }
 
 /* .fa{
@@ -976,7 +1023,6 @@ input[type=submit]:hover {
 } */
 
 /* footer ends here */
-
 
 
 
