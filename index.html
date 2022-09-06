@@ -5,22 +5,21 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<title>Travel Website</title>
 
-	
-	<meta name="description" content="">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
 	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
-<body onload="show() ;see();">
+<body onload="show()">
 	<nav class="navbar"> 
 		<label class="logo"><h1 style="color:#FDD037 ;">World</h1><h1>Explore</h1></label>
 		<ul>
-			<li><a class="active" href="#home">Home Page</a></li>
-			<li><a href="#about">About Us</a></li>
-			<li><a href="#places">Places</a></li>
-			<li><a href="#pricing">Pricing</a></li>
-			<li><a href="#staffs">Staffs</a></li>
-			<li><a href="#contact">Contact Us</a></li>
+			<li><a class="nav-link" class="active" href="#home">Home Page</a></li>
+			<li><a class="nav-link" href="#about">About Us</a></li>
+			<li><a class="nav-link" href="#places">Places</a></li>
+			<li><a class="nav-link" href="#pricing">Pricing</a></li>
+			<li><a class="nav-link" href="#staffs">Staffs</a></li>
+			<li><a class="nav-link" href="#contact">Contact Us</a></li>
 		</ul>
 	</nav>
 	
@@ -149,8 +148,9 @@
 		<div class="popular-list">
 			<div class="card">
 				<div class="card-text">
-					<span class="date">4 days-3 night</span>
 				    <h2>Singapore</h2>
+					<span class="date">4 days-3 night</span>
+
 				    <!-- <p>With its century-old temples, bustling hawker centres and lush green spaces</p> -->
 					</div> 
 				  <!-- <div class="card-image"> -->
@@ -160,8 +160,9 @@
 			</div>
 			<div class="card">
 				<div class="card-text">
-				<span class="date">2 days- 2 nights</span>
 				<h2>Bali</h2>
+				<span class="date">2 days- 2 nights</span>
+
 				<!-- <p>With epic tropical beauty, ancient temples, amazing food scene and vibrant nightlife</p> -->
 				</div>
 		  	    <!-- <div class="card-image"> -->
@@ -171,8 +172,9 @@
 			</div>
 			<div class="card">
 				<div class="card-text">
-					<span class="date">3 days-2 nights</span>
 					<h2>Dubai</h2>
+					<span class="date">3 days-2 nights</span>
+
 					<!-- <p>Famous for its unique attractions as Burj Khalifa,mega shopping malls, skyscrapers.</p> -->
 					</div>
 		    	<!-- <div class="card-image"> -->
@@ -182,8 +184,9 @@
 			</div>
 			<div class="card">
 				<div class="card-text">
-				<span class="date">3 days-2 nights</span>
 				<h2>Paris</h2>
+				<span class="date">3 days-2 nights</span>
+
 				<!-- <p>Most romantic city in the world, famous in movies, and other works of art</p> -->
 				</div>
 				<!-- <div class="card-image"> -->
@@ -299,7 +302,7 @@
 	</div>
 	<script type="text/javascript">
 		var left=1;
-		var right=5;
+		var right=4;
 		function show(){
 			for(i=left;i<=right;i++){
 				document.getElementById("c"+i).style.display="inline-block";
@@ -345,38 +348,103 @@
 
 <!--staff starts here-->
 
-<div id="information" >
-<p id="staffs">Our Staff</p>
-<div class="managment">
-		<div onclick="rightmove()">  <!--i changed left and right-->
-			<button class="button" style="vertical-align:middle"><span>left</span></button>
-		</div>
+<!-- <div id="information" > -->
+<!-- <p id="staffs">Our Staff</p> -->
+<div class="organization" id="staffs">
+		<!-- <div onclick="rightmove()">  i changed left and right -->
+			<!-- <button class="button" style="vertical-align:middle"><span>left</span></button>
+		</div> --> 
 
-		<div class="staff" id="s1">
+		<!-- id="s1" -->
+		<div class="staff" >
 			<img src="17.jpg">
 			<div class="staff-name">
-				<p class="specific"> Recruitment</p>
-				<div class="rating">
-				<p class="rating-star"> ⭐⭐⭐⭐</p>
-				</div>
-				<p class="discription">Takes the burden of sifting through a myriad of resumes from potential candidates from your plate, with a promise to only send you the best candidate recommendation. </p>
+				<h2> Commercial Director</h2>
 			</div>
+				<!-- <div class="rating">
+					⭐⭐⭐⭐
+				</div> -->
+				<!-- <p class="discription">Takes the burden of sifting through a myriad of resumes from potential candidates from your plate, with a promise to only send you the best candidate recommendation. </p> -->
+				
+				<div class="staff-contact-text">
+					
+					<div class="staff-contact-point">
+						<div class="staff-contact-icon">
+							<i class="fa-solid fa-envelope"></i>
+						</div>
+						<div class="staff-contact-info">
+							<h5>Info@travelxgroup.com</h5>
+						</div>	
+					</div>
+
+					<div class="staff-contact-point">
+						<div class="staff-contact-icon ">
+							<i class="fa-solid fa-phone"></i>
+						</div>
+						<div class="staff-contact-info">
+							<h5>+1(123)800-890</h5>
+						</div>
+					</div>
+
+					<!-- <div class="staff-contact-point">
+						<div class="staff-contact-icon">
+							<i class="fa-solid fa-location-dot"></i>
+						</div>
+						<div class="staff-contact-info">
+							<h5>Northern Colorado Office<br>6775 Sherman Street,<br>Loveland, CO 80538</h5>
+						</div>
+					</div> -->
+
+				</div>
 			
 		</div>
-
-		<div class="staff" id="s2">
+		<!-- id="s2" -->
+		<div class="staff" >
 			<img src="18.jpg">
 			<div class="staff-name">
-				<p class="specific">Project Staff</p>
-				<div class="rating">
+				<h2>Project Staff</h2>
+				<!-- <div class="rating">
 				<p class="rating-star"> ⭐⭐⭐⭐⭐</p>
-				</div>
-				<p class="discription">We maintain a talent pool of veteran travel agents with expertise in diverse fields from Entertainment Travel, Group Ticketing Agents, Destination Specialists, Meeting Planners.</p>
+				</div> -->
+				<!-- <p class="discription">We maintain a talent pool of veteran travel agents with expertise in diverse fields from Entertainment Travel, Group Ticketing Agents, Destination Specialists, Meeting Planners.</p> -->
 			</div>
+
+			<div class="staff-contact-text">
+					
+					<div class="staff-contact-point">
+						<div class="staff-contact-icon">
+							<i class="fa-solid fa-envelope"></i>
+						</div>
+						<div class="staff-contact-info">
+							<h5>Info@travelxgroup.com</h5>
+						</div>	
+					</div>
+
+					<div class="staff-contact-point">
+						<div class="staff-contact-icon ">
+							<i class="fa-solid fa-phone"></i>
+						</div>
+						<div class="staff-contact-info">
+							<h5>+1(123)800-890</h5>
+						</div>
+					</div>
+
+					<!-- <div class="staff-contact-point">
+						<div class="staff-contact-icon">
+							<i class="fa-solid fa-location-dot"></i>
+						</div>
+						<div class="staff-contact-info">
+							<h5>Northern Colorado Office<br>6775 Sherman Street,<br>Loveland, CO 80538</h5>
+						</div>
+
+					</div> -->
+					
+				</div>
 			
 		</div>
 
-		<div class="staff" id="s3">
+		<!-- id="s3" -->
+		<!-- <div class="staff" >
 			<img src="19.jpg">
 			<div class="staff-name">
 				
@@ -387,9 +455,10 @@
 				<p class="discription">Travel agents (Corporate or Leisure), Ticketing Agents, Support Agents, & TRAMS specialists. Assignments are filled with a minimum, one-month requirement.</p>
 			</div>
 			
-		</div>
+		</div> -->
 
-		<div class="staff" id="s4">
+		<!-- id="s4" -->
+		<!-- <div class="staff" >
 			<img src="20.jpg">
 			<div class="staff-name">
 				<p class="specific">Ecxecutive Search</p>
@@ -399,27 +468,58 @@
 				<p class="discription">our exclusive resource to help you find top-tier travel & hospitality talent for management and directorship positions in your company.</p>
 			</div>
 			
-		</div>
+		</div> -->
 
-		<div class="staff" id="s5">
+		<!--id="s5" -->
+		<div class="staff" >  
 			<img src="21.jpg">
 			<div class="staff-name">
-				<p class="specific">Guide</p>
-				<div class="rating">
+				<h2>Personal Guide</h2>
+				<!-- <div class="rating">
 				<p class="rating-star"> ⭐⭐⭐⭐⭐</p>
-				</div>
-				<p class="discription">You can hire your personal Guide Based on your choices and requirments.</p>
+				</div> -->
+				<!-- <p class="discription">You can hire your personal Guide Based on your choices and requirments.</p> -->
 			</div>
+
+			<div class="staff-contact-text">
+					
+					<div class="staff-contact-point">
+						<div class="staff-contact-icon">
+							<i class="fa-solid fa-envelope"></i>
+						</div>
+						<div class="staff-contact-info">
+							<h5>Info@travelxgroup.com</h5>
+						</div>	
+					</div>
+
+					<div class="staff-contact-point">
+						<div class="staff-contact-icon ">
+							<i class="fa-solid fa-phone"></i>
+						</div>
+						<div class="staff-contact-info">
+							<h5>+1(123)800-890</h5>
+						</div>
+					</div>
+
+					<!-- <div class="staff-contact-point">
+						<div class="staff-contact-icon">
+							<i class="fa-solid fa-location-dot"></i>
+						</div>
+						<div class="staff-contact-info">
+							<h5>Northern Colorado Office<br>6775 Sherman Street,<br>Loveland, CO 80538</h5>
+						</div>
+					</div> -->
+				</div>
 			
 		</div>
 
-		<div id="arrowright" onclick="leftmove()">
+		<!-- <div id="arrowright" onclick="leftmove()">
 			<button class="button" style="vertical-align:middle"><span>right</span></button>
-		</div>
+		</div> -->
 
 	</div>
 
-	<script type="text/javascript">
+	<!-- <script type="text/javascript">
 		var l=1;
 		var r=1;
 		function see(){
@@ -460,7 +560,7 @@
 			else
 				return;
 		}
-	</script>
+	</script> -->
 
 	
 
@@ -468,69 +568,160 @@
 
 
 <!--Contact Us Form Start here-->
+<div class="contact-section">
+	<div class="contact-section-image">
+		<img src="25.png" alt="xyx">
+	</div>
+	<div class="contact-form" id="contact">
+		<p id="heading">Get In Touch</p>
+	  <form action="action_page.php">
+	
+		<label for="fname">First Name</label>
+		<input type="text" id="fname" name="firstname" placeholder="Your name..">
+	
+		<label for="lname">Last Name</label>
+		<input type="text" id="lname" name="lastname" placeholder="Your last name..">
+	
+		<label for="country">Country</label>
+		<select id="country" name="country">
+		  <option value="India">India</option>
+		  <option value="other">other</option>
+		</select>
+	
+		<label for="subject">Subject</label>
+		<textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+	
+		<input type="submit" value="Submit">
+	
+	  </form>
+	</div>
+	
 
 
-<div class="contact" id="contact">
-	<p id="heading">Get In Touch</p>
-  <form action="action_page.php">
-
-    <label for="fname">First Name</label>
-    <input type="text" id="fname" name="firstname" placeholder="Your name..">
-
-    <label for="lname">Last Name</label>
-    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
-
-    <label for="country">Country</label>
-    <select id="country" name="country">
-      <option value="India">India</option>
-      <option value="other">other</option>
-    </select>
-
-    <label for="subject">Subject</label>
-    <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
-
-    <input type="submit" value="Submit">
-
-  </form>
 </div>
+
 
 <!-- contact form ends here -->
 
 <!-- footer starts here -->
-<footer>
-	<div>
-		Did you know that..
-		<p>
+<footer class="footer">
+	<div class="footer-note">
+		<h1>Did you know that..</h1>
+		<p class="footer-description">
 			When you purchase something through our links we earn a small fee. However ,you still pay same. Win-Win!
 		</p>
-		<div>Find Hotels via Booking.com</div>
-		<div>Find rental car via Sunny Cars</div>
-		<div>Find Cheap Flights via Skyscanner</div>
-		<div>Get a Travel Insurance via Heymondo</div>
+		<table class="footer-points-list">
+			<tr>
+				<td>
+					<div class="footer-points">
+						<div>
+							<i class="footer-icon fa-solid fa-hotel"></i> 
+						</div>
+						<div>
+							<h3>Find Hotels </h3>
+							<p>via Booking.com</p>
+						</div>
+					</div>
+				</td>
+				<td>
+					<div class="footer-points">
+						<div>
+							<i class=" footer-icon fa-solid fa-car"></i>
+						</div>
+						<div>
+							<h3>Find rental car </h3>
+							<p>via Sunny Cars</p>
+						</div>
+					</div>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<div class="footer-points">
+						<div>
+							<i class="footer-icon fa-solid fa-plane-departure"></i>
+						</div>
+						<div>
+							<h3>Find Flights</h3>
+							<p>via Skyscanner</p>
+						</div>
+					</div>
+				</td>
+				<td>
+					<div class="footer-points">
+						<div>
+							<i class="footer-icon fa-solid fa-shield"></i> 
+						</div>
+						<div>
+							<h3> Get a Travel Insurance</h3>
+							<p>via Heymondo</p>
+						</div>
+					</div>
+				</td>
+			</tr>
+		</table>
+		<!-- <div class="footer-points"><i class="fa-solid fa-car"></i> Find rental car via Sunny Cars</div>
+		<div class="footer-points"><i class="fa-solid fa-plane-departure"></i> Find Cheap Flights via Skyscanner</div>
+		<div class="footer-points"><i class="fa-solid fa-shield"></i> Get a Travel Insurance via Heymondo</div> -->
 
 	</div>
-	<div class="s-logo">
-	<!-- Add icon library -->	
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-	<!-- Add font awesome icons -->
+	<div class="contact-us">
+		<div class="contact-text">
+			<h1>Contact Us</h1>
+			<div class="contact-point">
+				<div class="contact-icon">
+					<i class="fa-solid fa-envelope"></i>
+				</div>
+				<div class="contact-info">
+					<h4>Info@travelxgroup.com</h4>
+				</div>
+				
+			</div>
+			<div class="contact-point">
+				<div class="contact-icon ">
+					<i class="fa-solid fa-phone"></i>
+				</div>
+				<div class="contact-info">
+					<h4>+1(123)800-890</h4>
+				</div>
+			</div>
+			<div class="contact-point">
+				<div class="contact-icon">
+					<i class="fa-solid fa-location-dot"></i>
+				</div>
+				<div class="contact-info">
+					<h4>Northern Colorado Office<br>6775 Sherman Street,<br>Loveland, CO 80538</h4>
+				</div>
+				
+			</div>
+		</div>
 
-	 <a href="https://about.facebook.com/" class="fa fa-facebook"></a>
-	<a href="https://myaccount.google.com/?utm_source=account-marketing-page&utm_medium=go-to-account-button&pli=1"class="fa fa-google"></a>
-	<a href="https://www.instagram.com/littlecutie025/" class="fa fa-instagram"></a>
-</div>
-
-<div class="contact-us">
-	<h1>Contact Us</h1>
-	<div class="contact-email"> Info@travelxgroup.com</div>
-	<div class="contact-number">+1(123)800-890</div>
-	<div class="contact-address">Northern Colorado Office<br>
-		6775 Sherman Street,<br>
-		Loveland, CO 80538</div>
-</div>
+		<div class="contact-logo">
+			<div>
+				<a class="social-logo" style="margin-left: 0px;" href="https://about.facebook.com/" >
+					<i class="fa-brands fa-facebook"></i>
+				</a>
+			</div>
+			<div>
+				<a class="social-logo" href="https://www.instagram.com/littlecutie025/">
+					<i class="fa-brands fa-instagram"></i>
+				</a>
+			</div>
+			<div>
+				<a class="social-logo" href="">
+					<i class="fa-brands fa-twitter"></i>
+				</a>
+			</div>
+			<div>
+				<a class="social-logo" href="">
+					<i class="fa-brands fa-pinterest-p"></i>
+				</a>
+			</div>
+		</div>
+	</div>
 
 </footer>
-
-<!-- footer ends here -->
+<script src="index.js"></script><!-- footer ends here -->
 </body>
 </html>
