@@ -40,100 +40,8 @@
 	</section>
 
 
-<!-- image slider start 
-	<section class="slider" id="home">
-      <div class="slides">-->
-        <!--radio buttons start-->
-        <!-- <input type="radio" name="radio-btn" id="radio1">
-        <input type="radio" name="radio-btn" id="radio2">
-        <input type="radio" name="radio-btn" id="radio3">
-        <input type="radio" name="radio-btn" id="radio4"> -->
-        <!--radio buttons end-->
-        <!--slide images start-->
-        <!-- <div class="slide first">
-          <img src="5.jpg" alt="">
-        </div>
-        <div class="slide">
-          <img src="6.jpg" alt="">
-        </div>
-        <div class="slide">
-          <img src="7.jpg" alt="">
-        </div>
-        <div class="slide">
-          <img src="8.jpg" alt="">
-        </div> -->
-        <!--slide images end-->
-        <!--automatic navigation start-->
-        <!-- <div class="navigation-auto">
-          <div class="auto-btn1"></div>
-          <div class="auto-btn2"></div>
-          <div class="auto-btn3"></div>
-          <div class="auto-btn4"></div>
-        </div> -->
-        <!--automatic navigation end-->
-      <!-- </div> -->
-      <!--manual navigation start-->
-      <!-- <div class="navigation-manual">
-        <label for="radio1" class="manual-btn"></label>
-        <label for="radio2" class="manual-btn"></label>
-        <label for="radio3" class="manual-btn"></label>
-        <label for="radio4" class="manual-btn"></label>
-      </div> -->
-      <!--manual navigation end-->
-   <!-- </section> -->
-    <!--image slider end-->
-
-    <!-- <script type="text/javascript">
-    var counter = 1;
-    setInterval(function(){
-      document.getElementById('radio' + counter).checked = true;
-      counter++;
-      if(counter > 4){
-        counter = 1;
-      }
-    }, 5000);
-    </script>
-</p>  -->
-
-<!-- about us -->
-<!-- <section class="about" id="about">
-	<div class="container">
-		<div class="about-content">
-			<p class="about-subtitle">About Us</p>
-			<h2 class="section-title">Explore the World with Us</h2>
-			
-			<ul> 
-				<li class="about-item">
-	                <h3 class="item-title">Tour guide</h3>
-	                <p class="item-text">
-	                   Insights to make the most of the experience.
-	                 </p>
-	            </li>
-
-            	<li class="about-item">
-	                <h3 class="item-title">Friendly Price</h3>
-	                <p class="item-text">
-	                    Inexpensive,Cost-effective, and Low-priced.
-	                 </p>
-	            </li>
-               
-				<li class="about-item">
-	                <h3 class="item-title">Reliable Tour</h3>
-	                <p class="item-text">
-	                    Offers novel, authentic experiences
-	                 </p>
-	            </li>
-
-            </ul>
-		</div>
-	</div>
-	
 
 
-	<iframe class="about-video" width="885" height="498" src="https://www.youtube.com/embed/LgtU1h0ck58?autoplay=1&mute=1" title="Travel Agency Promotional Video - CreateStudio Example" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-	
-</section> -->
-<!--about us ends here-->
 
 
 <!--places we are offering-->
@@ -198,11 +106,29 @@
 
 <!--places we are offering ends here-->
 
+<section class="explore">
+	<div class="mask">
+		<div class="explore-parent">
+			<div class="explore-sub-heading">
+				IT'S A BIG WORLD OUT THERE
+			</div>
+			<div class="explore-heading">
+				GO EXPLORE
+			</div>
+			<div class="explore-about">
+				Wherever you want to go and whatever you want to do, makes it easy and supports you with 24/7 customer support. 28 million reported accommodation listings, including over 6.2 million homes, apartments, and other unique places to stay
+			</div>
+		</div>
+	</div>
+	
+	
+</section>
+
 <!--pricing starts here-->
 
 	<div class="parent" id="pricing">
 		<div id="leftarrow" onclick="moveright()" >  <!--i changed left and right-->
-			<button ><i class="fa-solid fa-arrow-left"></i></button>
+			<button class="left-button"><i class="fa-solid fa-arrow-left"></i></button>
 		</div>
 		<div class="child" id="c1">
 			<img src="9.jpg">
@@ -383,65 +309,21 @@
 
 
 		<div id="rightarrow" onclick="moveleft()">
-			<button><i class="fa-solid fa-arrow-right"></i></button>
+			<button class="right-button"><i class="fa-solid fa-arrow-right"></i></button>
 		</div>
 
 	</div>
-	<script type="text/javascript">
-		var left=1;
-		var right=4;
-		function show(){
-			for(i=left;i<=right;i++){
-				document.getElementById("c"+i).style.display="inline-block";
-			}
-			
-		}
-
-		function moveleft(){
-
-			if (left<=3 && right<=7){
-				document.getElementById("c"+left).style.display="none";
-			left+=1;
-			right+=1;
-
-			for(i=left;i<=right;i++){
-				document.getElementById("c"+i).style.display="inline-block";
-			}
-
-			}
-			else
-				return;
-
-		}
-
-		function moveright(){
-			if (left>=2 && right>=6){
-				document.getElementById("c"+right).style.display="none";
-			left-=1;
-			right-=1;
-
-			for(i=left;i<=right;i++){
-				document.getElementById("c"+i).style.display="inline-block";
-			}
-
-			}
-			else
-				return;
-		}
-	</script>
-
-
+	
 <!--pricing ends here-->
 
 <!--staff starts here-->
 
 <!-- <div id="information" > -->
+
 <!-- <p id="staffs">Our Staff</p> -->
 <div class="organization" id="staffs">
-		<!-- <div onclick="rightmove()">  i changed left and right -->
-			<!-- <button class="button" style="vertical-align:middle"><span>left</span></button>
-		</div> --> 
-
+		
+	<!-- <div class="organization-parent">  -->
 		<!-- id="s1" -->
 		<div class="staff" >
 			<img src="17.jpg">
@@ -530,34 +412,9 @@
 			
 		</div>
 
-		<!-- id="s3" -->
-		<!-- <div class="staff" >
-			<img src="19.jpg">
-			<div class="staff-name">
-				
-				<p class="specific">Temp Staff</p>
-				<div class="rating">
-				<p class="rating-star"> ⭐⭐⭐⭐</p>
-				</div>
-				<p class="discription">Travel agents (Corporate or Leisure), Ticketing Agents, Support Agents, & TRAMS specialists. Assignments are filled with a minimum, one-month requirement.</p>
-			</div>
-			
-		</div> -->
+		
 
-		<!-- id="s4" -->
-		<!-- <div class="staff" >
-			<img src="20.jpg">
-			<div class="staff-name">
-				<p class="specific">Ecxecutive Search</p>
-				<div class="rating">
-				<p class="rating-star">⭐⭐⭐⭐</p>
-				</div>
-				<p class="discription">our exclusive resource to help you find top-tier travel & hospitality talent for management and directorship positions in your company.</p>
-			</div>
-			
-		</div> -->
-
-		<!--id="s5" -->
+		<!--id="s3" -->
 		<div class="staff" >  
 			<img src="21.jpg">
 			<div class="staff-name">
@@ -596,58 +453,13 @@
 							<h5>Northern Colorado Office<br>6775 Sherman Street,<br>Loveland, CO 80538</h5>
 						</div>
 					</div> -->
-				</div>
+			</div>
 			
 		</div>
+	<!-- </div> -->
+</div>
 
-		<!-- <div id="arrowright" onclick="leftmove()">
-			<button class="button" style="vertical-align:middle"><span>right</span></button>
-		</div> -->
-
-	</div>
-
-	<!-- <script type="text/javascript">
-		var l=1;
-		var r=1;
-		function see(){
-			for(i=l;i<=r;i++){
-				document.getElementById("s"+i).style.display="inline-block";
-			}
-			
-		}
-
-		function leftmove(){
-
-			if (l<=4 && r<=4){
-				document.getElementById("s"+l).style.display="none";
-			l+=1;
-			r+=1;
-
-			for(i=l;i<=r;i++){
-				document.getElementById("s"+i).style.display="inline-block";
-			}
-
-			}
-			else
-				return;
-
-		}
-
-		function rightmove(){
-			if (l>=2 && r>=2){
-				document.getElementById("s"+r).style.display="none";
-			l-=1;
-			r-=1;
-
-			for(i=l;i<=r;i++){
-				document.getElementById("s"+i).style.display="inline-block";
-			}
-
-			}
-			else
-				return;
-		}
-	</script> -->
+	
 
 	
 
@@ -678,7 +490,7 @@
 		<label for="subject">Subject</label>
 		<textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
 	
-		<input type="submit" value="Submit">
+		<input type="submit" class="btn" value="Send Now">
 	
 	  </form>
 	</div>

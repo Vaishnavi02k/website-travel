@@ -124,7 +124,8 @@ nav ul li a{
 	height: 100%;
 	margin: 0px;
 	background-color: rgb(0, 0, 0, 0.4);
-	
+	display: flex;
+	justify-content: center;
 }
 
 .lower-heading{
@@ -166,176 +167,6 @@ nav ul li a{
 /* slide show ends here */
 
 
-/* slider
-
-.slider{
-  width: 60%;
-  height: 600px;
-  border-radius: 10px;
-  overflow: hidden;
-  padding: 120px 40px 20px 100px;
-
-  
-}
-
-.slides{
-  width: 800%;
-  height: 500px;
-  display: flex;
-
-}
-
-.slides input{
-  display: none;
-}
-
-.slide{
-  width: 20%;
-  transition: 2s;
-}
-
-
-.slide img{
-  align-items: center;
-  width: 800px;
-  height: 500px;
-
-}
-
-/*css for manual slide navigation*/
-
-/* .navigation-manual{
-  position: absolute;
-  width: 800px;
-  margin-top: -40px;
-  display: flex;
-  justify-content: center;
-}
-
-.manual-btn{
-  border: 2px solid #40D3DC;
-  padding: 5px;
-  border-radius: 10px;
-  cursor: pointer;
-  transition: 1s;
-}
-
-.manual-btn:not(:last-child){
-  margin-right: 100px;
-}
-
-.manual-btn:hover{
-  background: #40D3DC;
-}
-
-#radio1:checked ~ .first{
-  margin-left: 0;
-}
-
-#radio2:checked ~ .first{
-  margin-left: -20%;
-}
-
-#radio3:checked ~ .first{
-  margin-left: -40%;
-}
-
-#radio4:checked ~ .first{
-  margin-left: -60%;
-}
-
-/*css for automatic navigation*/
-
-/* .navigation-auto{
-  position: absolute;
-  display: flex;
-  width: 800px;
-  justify-content: center;
-  margin-top: 460px;
-}
-
-.navigation-auto div{
-  border: 2px solid #40D3DC;
-  padding: 5px;
-  border-radius: 10px;
-  transition: 1s;
-}
-
-.navigation-auto div:not(:last-child){
-  margin-right: 100px;
-}
-
-#radio1:checked ~ .navigation-auto .auto-btn1{
-  background: #40D3DC;
-}
-
-#radio2:checked ~ .navigation-auto .auto-btn2{
-  background: #40D3DC;
-}
-
-#radio3:checked ~ .navigation-auto .auto-btn3{
-  background: #40D3DC;
-}
-
-#radio4:checked ~ .navigation-auto .auto-btn4{
-  background: #40D3DC;
-}
-
-
-.main{	
-	text-align: center;
-	margin-top: 30px;
-	transition: all 2s ease 0.5s ;
-}
-.main:hover{
-	transform: scale(1.5);
-	color:#0b247d;
-}  */
-
-
-
-
-/*about-us*/
-/* 
-.about{
-	display:flex;
-	justify-content: space-between;
-	text-align:justify-all;
-	box-sizing: border-box;
-	padding: 80px 50px 50px;
-	
-
-	
-}
-
-
-.about-subtitle{
-	font-family: 'Shadows Into Light', cursive;
-	font-size:30px;
-	color: #0b247d;
-}
-
-.item-title{
-	display: inline-block;
-	text-transform: capitalize;
-	font-family: 'Lora', serif;
-	margin: 10px;
-}
-.item-text{
-	display: block;
-	margin-left: 10px;
-}
-.section-title{
-	font-family: 'Lora', serif;
-	font-size: 40px;
-	font-weight: 100;
-}
-
-.about-video{
-	margin: 20px;
-	height:250px;
-	width:400px;
-} */
 
 
 
@@ -373,7 +204,7 @@ nav ul li a{
 	/* width: 16%; */
 	position: absolute;
 	padding: 50px 30px;
-	margin-top: 215px;
+	margin-top: 117px;
 	color: #fff;
 	z-index: 1;
 	/* overflow: hidden;
@@ -388,10 +219,65 @@ nav ul li a{
 }
 
 .card-text:hover{
-	margin-top: 190px;
+	margin-top: 90px;
 }
 
+.explore{
+	background-image: url(25.jpg);
+	/* height: 80%; */
+	background-repeat: no-repeat;
+	background-size: cover;
+	/* opacity: 0.8; */
+	/* filter: brightness(0.3); */
+	display: flex;
+	justify-content: center;
+}
+
+.explore .mask{
+	background-color: rgb(0, 0, 0, 0.7);
+}
+
+.explore-parent {
+	width: 60%;
+	padding: 8%;
+	margin-bottom: 5%;
+	margin-bottom: 5%;
+}
+
+.explore-sub-heading{
+	/* position: absolute; */
+	/* transform: translate(-50%); */
+	/* color: #029049; */
+	color: #fff;
+	left: 50%;
+	top:5%;
+	font-size:20px;
+	text-align: center;
+}
+
+.explore-heading{
+	/* position: absolute; */
+	/* transform: translate(-50%); */
+	left:50%;
+	padding: 1%;
+	color: #FDD037;
+	font-size: 50px;
+	text-align: center;
+}
+
+.explore-about{
+	text-align: center;
+	font-size: 15px;
+	color: #fcfafa;
+}
+
+
+
+
+
+
 .places-lower-heading{
+	transform: translate(-50%);
 	position: absolute;
 	transform: translate(-50%);
 	top:101%;
@@ -423,88 +309,10 @@ nav ul li a{
   } 
 
 
-
-
-
-/* 
-.card {
-  /* display: grid; */
-  /* grid-template-columns: 100%;
-  grid-template-rows: 50% 95%;
-  grid-template-areas: "image" "text"; */
-/* 
-  border-radius: 20px;
-  background: white;
-  box-shadow: 5px 5px 15px rgba(0,0,0,0.9);
-  font-family: sans-serif;
-  text-align: justify-all;
-  height: 500px;
-  width: 50%;
-} */
-/* 
-.card-text {
-  grid-area: text;
-  margin: 25px;
-  position: absolute;
-  z-index: 1;
-}
-.card-text .date {
-  text-align: left;
-  font-family: 'Shadows Into Light', cursive;
-  color: rgb(255, 7, 110);
-  font-size:20px;
-} */
-/* .card-text p {
-  color: grey;
-  font-family: 'Shadows Into Light', cursive;
-  font-size:15px;
-  font-weight: 300;
-  margin-bottom: 10px;
-} */
-/* .card-text h2 {
-  font-family: 'Shadows Into Light', cursive;
-  text-transform: uppercase;
-  font-weight: 800;
-  margin-top:0px;
-  font-size:28px;
-  text-align: center;
-} */
-/* 
-.card-image {
-	width: 100%;
-	height: 100%;
-} */
-/* .card img{
-	border-radius: 15px;
-	max-width: 100%;
-    max-height: 100%; */
-	/* height: 480px; */
-	/* padding:10px; */
-	/* background: cover; */
-	/* object-fit: cover; */
-	
-/* } */
-/* 
-.card:hover {
-  transform: scale(1.1);
-  box-shadow: 5px 5px 15px rgba(0,0,0,0.6);
-  padding-bottom: 10px;
-}
-.card {
-  transition: 0.5s ease;
-  cursor: pointer;
-  margin:20px;
-} */
-
-
- /* */
-
-
-
-
 /*pricing*/
 
 .parent{
+	margin-top: 5%;
 	display: flex;
 	justify-content: space-evenly;
 	align-items: center;
@@ -623,103 +431,25 @@ nav ul li a{
 	
 	justify-content: space-between;
 }
-/*staff*/
-/* #our{
-	justify-content:left;
-	font-family: 'Lora', serif;
-	font-size: 30px;
-	margin-left: 30px
-}
 
-.managment{
-	margin-left: 40px;
-	display: flex;
-	justify-content: left;
-	align-items: center;
-	height: 500px;
-}
-
-.staff{
-	border-radius:75px;
-	width: 280px;
-	height: 450px;
-	margin: 10px;
-	padding: 15px;
-	display: none; 
-	border: 5px solid bold;
-	background-color: white;
-}
-
-.staff img{
-	height: 200px;
-	border-radius:75px;
-	width: 100%;
-	padding: 20px;
-}
-.specific{
-	padding: 10px;
-	font-size: 30px;
-	font-weight: 150;
-	text-align: center;
-}
-
-
-.rating-star{
-	text-align: right;
-	margin-bottom: 10px;
-} */
-
-
-/* .button {
-  display: inline-block;
-  border-radius: 100px;
-  background-color: #0b247d;
-  border: none;
-  color: #FFFFFF;
-  text-align: center;
-  font-size: 10px;
-  padding: 20px;
-  width: 100px;
-  transition: all 0.5s;
-  cursor: pointer;
-  margin: 5px;
-}
-
-.button span {
-  cursor: pointer;
-  display: inline-block;
-  position: relative;
-  transition: 0.5s;
-}
-
-.button span:after {
-  content: '\00bb';
-  position: absolute;
-  opacity: 0;
-  top: 0;
-  right: -20px;
-  transition: 0.5s;
-}
-
-.button:hover span {
-  padding-right: 25px;
-}
-
-.button:hover span:after {
-  opacity: 1;
-  right: 0;
-} */
 
 
 /* our organization */
 
-.organization{
-	background-image: url(22.jpg);
+
+ 
+
+.organization {
+	background-image: url(26.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	/* filter: brightness(0.4); */
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
 	align-items: center;
 	padding: 5% 5% 5% 5%;
+
 	/* background-color: #00000099; */
 
 	/* height: 80%; */
@@ -728,10 +458,26 @@ nav ul li a{
 
 	/* justify-content: space-around; */
 }
+/* .organization-parent {
+	width: 100%;
+	padding: 8%;
+	margin-bottom: 5%;
+	margin-bottom: 5%;
+	
+
+	
+}  */
+
+
+
+/* .organization .mask{
+	background-color: rgb(0, 0, 0, 0.7);
+} */
+
 
 .staff{
 	/* background-image: url(22.jpg); */
-	
+	/* filter: brightness(1); */
 	border: 2px solid #fff;
 	color: #fff;
 	display: flex;
@@ -740,7 +486,7 @@ nav ul li a{
 	height: 50%;
 	margin: 3%;
 	z-index: 2;
-	
+	transition: all 0.3s;
 	/* height: 80%; */
 }	
 
@@ -761,6 +507,7 @@ nav ul li a{
 	width:70%;
 	margin: 10%;
 	border-radius:50%;
+	object-fit: cover;
 	
 }
 
@@ -824,7 +571,7 @@ input[type=text], select, textarea {
   /* resize: vertical Allow the user to vertically resize the textarea (not horizontally) */
  } 
 
-/* Style the submit button with a specific background color etc */
+/* Style the submit button with a specific background color etc
 input[type=submit] {
   background-color: #0b247d;
   color: white;
@@ -832,12 +579,12 @@ input[type=submit] {
   border: none;
   border-radius: 4px;
   cursor: pointer;
-}
+} */
 
 /* When moving the mouse over the submit button, add a darker green color */
-input[type=submit]:hover {
+/* input[type=submit]:hover {
   background-color: #08034a;
-}
+} */
 
 /* Add a background color and some padding around the form */
 
@@ -866,6 +613,26 @@ input[type=submit]:hover {
 
 .contact-section-image img{
 	object-fit: contain;
+}
+
+.btn{
+	display: flex;
+	align-items: center;
+	cursor: pointer;
+	background-color: #FDD037;
+	color: #fff;
+	/* text-align: center; */
+	/* vertical-align: middle; */
+	margin: 1%;
+	padding: 3%;
+	border: 1px solid transparent;
+	border-radius: 1%;
+	transition: color .2s;
+}
+
+.btn:hover{
+	/* transform: scale(1.15); */
+	background-color: #029049;
 }
 
 
