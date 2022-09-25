@@ -12,13 +12,13 @@
 </head>
 <body onload="show()">
 	<nav class="navbar"> 
-		<label class="logo"><h1 style="color:#FDD037 ;">World</h1><h1>Explore</h1></label>
+		<label class="logo"><h1 style="color:#FDD037 ;"><i class="fa-solid fa-earth-americas"></i> World</h1><h1>Explorer</h1></label>
 		<ul>
 			<li><a class="nav-link" class="active" href="#home">Home Page</a></li>
-			<li><a class="nav-link" href="#about">About Us</a></li>
 			<li><a class="nav-link" href="#places">Places</a></li>
 			<li><a class="nav-link" href="#pricing">Pricing</a></li>
 			<li><a class="nav-link" href="#staffs">Staffs</a></li>
+			<li><a class="nav-link" href="#about">About Us</a></li>
 			<li><a class="nav-link" href="#contact">Contact Us</a></li>
 		</ul>
 	</nav>
@@ -42,22 +42,22 @@
 
 
 
-
+<div class="places-lower-heading" id="places"> 
+	TOURS
+</div>
+<div class="places-upper-heading">
+	ENJOY THE JOURNEY
+</div>
 
 <!--places we are offering-->
-<section class="places" id="places">
-		<div class="places-lower-heading"> 
-			TOURS
-		</div>
-		<div class="places-upper-heading">
-			ENJOY THE JOURNEY
-		</div>
+<section class="places" >
+		
 
 		<div class="popular-list">
 			<div class="card">
 				<div class="card-text">
 				    <h2>Singapore</h2>
-					<span class="date">4 days-3 night</span>
+					<!-- <span class="date">4 days-3 night</span> -->
 
 				    <!-- <p>With its century-old temples, bustling hawker centres and lush green spaces</p> -->
 					</div> 
@@ -69,7 +69,7 @@
 			<div class="card">
 				<div class="card-text">
 				<h2>Bali</h2>
-				<span class="date">2 days- 2 nights</span>
+				<!-- <span class="date">2 days- 2 nights</span> -->
 
 				<!-- <p>With epic tropical beauty, ancient temples, amazing food scene and vibrant nightlife</p> -->
 				</div>
@@ -81,7 +81,7 @@
 			<div class="card">
 				<div class="card-text">
 					<h2>Dubai</h2>
-					<span class="date">3 days-2 nights</span>
+					<!-- <span class="date">3 days-2 nights</span> -->
 
 					<!-- <p>Famous for its unique attractions as Burj Khalifa,mega shopping malls, skyscrapers.</p> -->
 					</div>
@@ -93,7 +93,7 @@
 			<div class="card">
 				<div class="card-text">
 				<h2>Paris</h2>
-				<span class="date">3 days-2 nights</span>
+				<!-- <span class="date">3 days-2 nights</span> -->
 
 				<!-- <p>Most romantic city in the world, famous in movies, and other works of art</p> -->
 				</div>
@@ -126,7 +126,15 @@
 
 <!--pricing starts here-->
 
-	<div class="parent" id="pricing">
+<div class="places-lower-heading" id="pricing"> 
+	TRAVEL
+</div>
+<div class="places-upper-heading">
+	RECOMMENDED DESTINATION
+</div>
+
+	<div class="parent" >
+		
 		<div id="leftarrow" onclick="moveright()" >  <!--i changed left and right-->
 			<button class="left-button"><i class="fa-solid fa-arrow-left"></i></button>
 		</div>
@@ -317,13 +325,9 @@
 <!--pricing ends here-->
 
 <!--staff starts here-->
-
-<!-- <div id="information" > -->
-
 <!-- <p id="staffs">Our Staff</p> -->
 <div class="organization" id="staffs">
-		
-	<!-- <div class="organization-parent">  -->
+	<div class="mask"> 
 		<!-- id="s1" -->
 		<div class="staff" >
 			<img src="17.jpg">
@@ -416,7 +420,7 @@
 
 		<!--id="s3" -->
 		<div class="staff" >  
-			<img src="21.jpg">
+			<img src="19.jpg">
 			<div class="staff-name">
 				<h2>Personal Guide</h2>
 				<!-- <div class="rating">
@@ -456,14 +460,87 @@
 			</div>
 			
 		</div>
-	<!-- </div> -->
+	</div>
+</div>
+<!--staff ends here-->
+
+
+
+
+
+
+<!-- About us starts here -->
+<div class="about-us" id="about">
+	<div class="about-us-content-parent">
+		<div class="about-us-content">
+			<div class="about-us-heading">
+				About World Explorer
+			</div>
+			<div class="about-us-info">
+				<p>Founded in 1996 in India, World Explorer has grown from a small Pune start-up to one of the world&apos;s leading digital travel companies. Part of World Explorer Holdings Inc. (NASDAQ: BKNG), World Exporer&apos;s mission is to make it easier for everyone to experience the world</p>
+			</div>
+			<div class="about-us-info">
+				<p>By investing in technology that takes the friction out of travel, World Explorer seamlessly connects millions of travelers to memorable experiences, a variety of transportation options, and incredible places to stay – from homes to hotels, and much more. As one of the world&apos;s largest travel marketplaces for both established brands and entrepreneurs of all sizes, World Explorer enables properties around the world to reach a global audience and grow their businesses</p>
+			</div>
+			<div>
+				<div class="read-more">
+					<a>READ MORE</a>
+				</div>
+			</div>
+		</div>
+	</div>	
+	<div class="about-us-image">
+			<img src="28.png" alt="person image">
+	</div>	
+	
 </div>
 
-	
 
-	
+<!-- about us ends here -->
 
-<!--staff ends here-->
+	<!-- services starts here -->
+
+	<div class="choose-us-parent">
+
+		<div class="choose-us-child1 box1">
+			<img src="20.jpg" alt="">
+		</div>
+		<div class="choose-us-child2">
+			<div class="choose-us">
+				<div class=" box2">
+					<img src="21.jpg" alt="">
+				</div>
+				<div class=" box3">
+					<!-- <div class="choose-us-logo">
+						<i class="fa-solid fa-route"></i>
+					</div> -->
+					<h1> Passionate Travel</h1>
+					<p>Exposure to new environments is fulfilling and educational. Traveling takes you out of your comfort zone and it allows you to communicate to natives with different religious beliefs, cultures and ethnicities.</p>
+				</div>
+			</div>
+			<div class="choose-us">
+				<div class="box4">
+					<!-- <div class="choose-us-logo">
+						<i class="fa-solid fa-map-location-dot"></i>
+					</div> -->
+					<h1> Beautiful Experience</h1>
+					<p>There's no doubt that travelling brings you a range of emotions: joy and excitement, but also the feeling that you're in unknown territory. One thing's for sure though: travelling is probably the best thing you can ever do.</p>
+				</div>
+				<div class="box5">
+					<img src="22.jpg" alt="">
+				</div>
+			</div>
+			
+			
+		</div>
+		
+	</div>
+
+<!-- services ends here -->
+
+
+
+
 
 
 <!--Contact Us Form Start here-->
@@ -475,20 +552,20 @@
 		<p id="heading">Get In Touch</p>
 	  <form action="action_page.php">
 	
-		<label for="fname">First Name</label>
-		<input type="text" id="fname" name="firstname" placeholder="Your name..">
+		<!-- <label for="fname">First Name</label> -->
+		<input type="text" id="fname" name="firstname" placeholder="Your Name..">
 	
-		<label for="lname">Last Name</label>
-		<input type="text" id="lname" name="lastname" placeholder="Your last name..">
+		<!-- <label for="lname">Last Name</label> -->
+		<input type="email" id="emailID" name="email" placeholder="Your Email ID..">
 	
-		<label for="country">Country</label>
+		<!-- <label for="country">Country</label> -->
 		<select id="country" name="country">
 		  <option value="India">India</option>
-		  <option value="other">other</option>
+		  <option value="other">Other Country</option>
 		</select>
 	
-		<label for="subject">Subject</label>
-		<textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+		<!-- <label for="subject">Subject</label> -->
+		<textarea id="subject"  name="subject" placeholder="Message..." style="height:200px"></textarea>
 	
 		<input type="submit" class="btn" value="Send Now">
 	
