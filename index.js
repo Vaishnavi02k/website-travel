@@ -66,3 +66,61 @@ var left=1;
 				document.getElementsByClassName("left-button")[0].disabled = false;
 			}
 		}
+
+
+		
+for(var i =0; i<document.getElementsByClassName("nav-link").length; i++){
+	document.getElementsByClassName("nav-link")[i].addEventListener("click",function() {
+		handleNavbar();
+		this.classList.add("active");
+	});
+}
+
+function handleNavbar() {
+	var navItems = document.getElementsByClassName("nav-link");
+	for(var i = 0; i<navItems.length; i++){
+		navItems[i].classList.remove("active");
+	}
+}
+
+function findPosition(obj) {
+    var currenttop = 0;
+    if (obj.offsetParent) {
+      do {
+        currenttop += obj.offsetTop;
+      } while ((obj = obj.offsetParent));
+      return [currenttop - 80];
+    }
+  }
+
+function scrolldiv(id_ele) {
+    window.scroll(0, findPosition(document.getElementById(id_ele)));
+  }
+
+  for(var i =0; i<document.getElementsByClassName("nav-link").length; i++){
+	document.getElementsByClassName("nav-link")[i].addEventListener("click",function() {
+		handleNavbar();
+		this.classList.add("active");
+	});
+}
+
+function handleNavbar() {
+	var navItems = document.getElementsByClassName("nav-link");
+	for(var i = 0; i<navItems.length; i++){
+		navItems[i].classList.remove("active");
+	}
+}
+
+function findPosition(obj) {
+    var currenttop = 0;
+    if (obj.offsetParent) {
+      do {
+        currenttop += obj.offsetTop;
+      } while ((obj = obj.offsetParent));
+      return [currenttop - 80];
+    }
+  }
+
+function scrolldiv(id_ele) {
+    window.scroll(0, findPosition(document.getElementById(id_ele)));
+  }

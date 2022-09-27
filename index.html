@@ -12,14 +12,14 @@
 </head>
 <body onload="show()">
 	<nav class="navbar"> 
-		<label class="logo"><h1 style="color:#FDD037 ;"><i class="fa-solid fa-earth-americas"></i> World</h1><h1>Explorer</h1></label>
+		<label class="logo"><h1 style="color:#FDD037 ;"><i class="fa-solid fa-earth-americas" style="color: #57bd09;"></i> World</h1><h1>Explorer</h1></label>
 		<ul>
-			<li><a class="nav-link" class="active" href="#home">Home Page</a></li>
-			<li><a class="nav-link" href="#places">Places</a></li>
-			<li><a class="nav-link" href="#pricing">Pricing</a></li>
-			<li><a class="nav-link" href="#staffs">Staffs</a></li>
-			<li><a class="nav-link" href="#about">About Us</a></li>
-			<li><a class="nav-link" href="#contact">Contact Us</a></li>
+			<li><a class="nav-link active" onClick="scrolldiv('home')">Home Page</a></li>
+			<li><a class="nav-link" onClick="scrolldiv('places')">Places</a></li>
+			<li><a class="nav-link" onClick="scrolldiv('pricing')">Pricing</a></li>
+			<li><a class="nav-link" onClick="scrolldiv('staffs')">Staffs</a></li>
+			<li><a class="nav-link" onClick="scrolldiv('about')">About Us</a></li>
+			<li><a class="nav-link" onClick="scrolldiv('contact')">Contact Us</a></li>
 		</ul>
 	</nav>
 	
@@ -32,7 +32,9 @@
 				The WORLD YOU HAVE NEVER SEEN
 			</div>
 		<div class="content">
-			Have Stories To Tell...
+			<p>
+				Have Stories To Tell...
+			</p> 
 		</div>
 		</div>
 		
@@ -41,17 +43,14 @@
 
 
 
-
-<div class="places-lower-heading" id="places"> 
-	TOURS
-</div>
-<div class="places-upper-heading">
-	ENJOY THE JOURNEY
-</div>
-
 <!--places we are offering-->
-<section class="places" >
-		
+<section class="places" id="places">
+	<div class="places-lower-heading" > 
+		TOURS
+	</div>
+	<div class="places-upper-heading">
+		ENJOY THE JOURNEY
+	</div>
 
 		<div class="popular-list">
 			<div class="card">
@@ -126,200 +125,203 @@
 
 <!--pricing starts here-->
 
-<div class="places-lower-heading" id="pricing"> 
-	TRAVEL
-</div>
-<div class="places-upper-heading">
-	RECOMMENDED DESTINATION
-</div>
 
-	<div class="parent" >
-		
-		<div id="leftarrow" onclick="moveright()" >  <!--i changed left and right-->
-			<button class="left-button"><i class="fa-solid fa-arrow-left"></i></button>
-		</div>
-		<div class="child" id="c1">
-			<img src="9.jpg">
-            <div class="name-and-price">
-                    <p class="name-city">Dubai</p>
-            </div>
-            <div class="rating-review-section">
-                <div>
-                    <p>⭐⭐⭐⭐ <i class="fa-regular fa-star"></i></p>
-                    <p>700 reviews</p>
-                </div>
-                <div class="price">
-                    <p class="start"> starting from:</p>
-                    <p class="money">Rs.18,990</p>
-                </div>
-            </div>
-            <div class="pricing-see-more">
-                <a>See More</a>
-            </div>
-		</div>
 
-		<div class="child" id="c2">
-			<img src="10.jpg">
-            <div class="name-and-price">
-                <p class="name-city">Singapore</p>   
-            </div>
-            <div class="rating-review-section">
-                <div>
-                    <p>⭐⭐⭐⭐ <i class="fa-regular fa-star"></i></p>
-                    <p>700 reviews</p>
-                </div>
-                <div class="price">
-                    <p class="start"> starting from:</p>
-                    <p class="money">Rs.15,990</p>
-                </div>
-                
-            </div>
-            <div class="pricing-see-more">
-                <a>See More</a>
-            </div>
+	<div id="pricing">
+		<div class="places-lower-heading"> 
+			<p>TRAVEL</p>
 		</div>
-
-		<div class="child" id="c3">
-			<img src="11.jpg">
-            <div class="name-and-price">
-                    <p class="name-city">Paris</p>
-        
-                
-            </div>
-            <div class="rating-review-section">
-                <div>
-                    <p>⭐⭐⭐⭐ <i class="fa-regular fa-star"></i></p>
-                    <p>700 reviews</p>
-                </div>
-                <div class="price">
-                    <p class="start"> starting from:</p>
-                    <p class="money">Rs.12,490</p>
-                </div>
-            </div>
-            <div class="pricing-see-more">
-                <a>See More</a>
-            </div>
+		<div class="places-upper-heading">
+			<p>RECOMMENDED DESTINATION</p>
 		</div>
-
-		<div class="child" id="c4">
-			<img src="12.jpg">
-            <div class="name-and-price">
-                    <p class="name-city">Kerala</p>
-    
-                
-            </div>
-            <div class="rating-review-section">
-                <div>
-                    <p>⭐⭐⭐⭐ <i class="fa-regular fa-star"></i></p>
-                    <p>700 reviews</p>
-                </div>
-                <div class="price">
-                    <p class="start"> starting from:</p>
-                    <p class="money">Rs.8,990</p>
-                </div>
-                
-            </div>
-            <div class="pricing-see-more">
-                <a>See More</a>
-            </div>
-		</div>
-
-		<div class="child" id="c5">
-			<img src="13.jpg">
-            <div class="name-and-price">
-                <p class="name-city">Bali</p>   
-            </div>
-			
-            <div class="rating-review-section">
-                <div>
-                    <p>⭐⭐⭐⭐ <i class="fa-regular fa-star"></i></p>
-                    <p>700 reviews</p>
-                </div>
-                <div class="price">
-                    <p class="start"> starting from:</p>
-                    <p class="money">Rs.10,900</p>
-                </div>
-                
-            </div>
-            <div class="pricing-see-more">
-                <a>See More</a>
-            </div>
-		</div>
-
-		<div class="child" id="c6">
-			<img src="14.jpg">
-            <div class="name-and-price">
-                    <p class="name-city">London</p>    
-            </div>
-			
-            <div class="rating-review-section">
-                <div>
-                    <p>⭐⭐⭐⭐ <i class="fa-regular fa-star"></i></p>
-                    <p>700 reviews</p>
-                </div>
-                <div class="price">
-                    <p class="start"> starting from:</p>
-                    <p class="money">Rs.18,990</p>
-                </div>
-                
-            </div>
-            <div class="pricing-see-more">
-                <a>See More</a>
-            </div>
-		</div>
-
-		<div class="child" id="c7">
-			<img src="15.jpg">
-            <div class="name-and-price">
-                    <p class="name-city">Manali</p>
-            </div>
-			
-            <div class="rating-review-section">
-                <div>
-                    <p>⭐⭐⭐⭐ <i class="fa-regular fa-star"></i></p>
-                    <p>700 reviews</p>
-                </div>
-                <div class="price">
-                    <p class="start"> starting from:</p>
-                    <p class="money">Rs.8,990</p>
-                </div>
-                
-            </div>
-            <div class="pricing-see-more">
-                <a>See More</a>
-            </div>
-		</div>
-
-		<div class="child" id="c8">
-			<img src="16.jpg">
-            <div class="name-and-price">
-                    <p class="name-city">Rajasthan</p>
-                
-            </div>
-			
-            <div class="rating-review-section">
-                <div>
-                    <p>⭐⭐⭐⭐ <i class="fa-regular fa-star"></i></p>
-                    <p>700 reviews</p>
-                </div>
-                <div class="price">
-                    <p class="start"> starting from:</p>
-                    <p class="money">Rs.6,990</p>
-                </div>
-                
-            </div>
-            <div class="pricing-see-more">
-                <a>See More</a>
-            </div>
-		</div>
-
+		<div class="parent">
+			<div id="leftarrow" onclick="moveright()" >  <!--i changed left and right-->
+				<button class="left-button"><i class="fa-solid fa-arrow-left"></i></button>
+			</div>
+			<div class="child" id="c1">
+				<img src="9.jpg">
+				<div class="name-and-price">
+						<p class="name-city">Dubai</p>
+				</div>
+				<div class="rating-review-section">
+					<div>
+						<p>⭐⭐⭐⭐ <i class="fa-regular fa-star"></i></p>
+						<p>700 reviews</p>
+					</div>
+					<div class="price">
+						<p class="start"> starting from:</p>
+						<p class="money">Rs.18,990</p>
+					</div>
+				</div>
+				<div class="pricing-see-more">
+					<a>See More</a>
+				</div>
+			</div>
 	
-
-
-		<div id="rightarrow" onclick="moveleft()">
-			<button class="right-button"><i class="fa-solid fa-arrow-right"></i></button>
+			<div class="child" id="c2">
+				<img src="10.jpg">
+				<div class="name-and-price">
+					<p class="name-city">Singapore</p>   
+				</div>
+				<div class="rating-review-section">
+					<div>
+						<p>⭐⭐⭐⭐ <i class="fa-regular fa-star"></i></p>
+						<p>700 reviews</p>
+					</div>
+					<div class="price">
+						<p class="start"> starting from:</p>
+						<p class="money">Rs.15,990</p>
+					</div>
+					
+				</div>
+				<div class="pricing-see-more">
+					<a>See More</a>
+				</div>
+			</div>
+	
+			<div class="child" id="c3">
+				<img src="11.jpg">
+				<div class="name-and-price">
+						<p class="name-city">Paris</p>
+			
+					
+				</div>
+				<div class="rating-review-section">
+					<div>
+						<p>⭐⭐⭐⭐ <i class="fa-regular fa-star"></i></p>
+						<p>700 reviews</p>
+					</div>
+					<div class="price">
+						<p class="start"> starting from:</p>
+						<p class="money">Rs.12,490</p>
+					</div>
+				</div>
+				<div class="pricing-see-more">
+					<a>See More</a>
+				</div>
+			</div>
+	
+			<div class="child" id="c4">
+				<img src="12.jpg">
+				<div class="name-and-price">
+						<p class="name-city">Kerala</p>
+		
+					
+				</div>
+				<div class="rating-review-section">
+					<div>
+						<p>⭐⭐⭐⭐ <i class="fa-regular fa-star"></i></p>
+						<p>700 reviews</p>
+					</div>
+					<div class="price">
+						<p class="start"> starting from:</p>
+						<p class="money">Rs.8,990</p>
+					</div>
+					
+				</div>
+				<div class="pricing-see-more">
+					<a>See More</a>
+				</div>
+			</div>
+	
+			<div class="child" id="c5">
+				<img src="13.jpg">
+				<div class="name-and-price">
+					<p class="name-city">Bali</p>   
+				</div>
+				
+				<div class="rating-review-section">
+					<div>
+						<p>⭐⭐⭐⭐ <i class="fa-regular fa-star"></i></p>
+						<p>700 reviews</p>
+					</div>
+					<div class="price">
+						<p class="start"> starting from:</p>
+						<p class="money">Rs.10,900</p>
+					</div>
+					
+				</div>
+				<div class="pricing-see-more">
+					<a>See More</a>
+				</div>
+			</div>
+	
+			<div class="child" id="c6">
+				<img src="14.jpg">
+				<div class="name-and-price">
+						<p class="name-city">London</p>    
+				</div>
+				
+				<div class="rating-review-section">
+					<div>
+						<p>⭐⭐⭐⭐ <i class="fa-regular fa-star"></i></p>
+						<p>700 reviews</p>
+					</div>
+					<div class="price">
+						<p class="start"> starting from:</p>
+						<p class="money">Rs.18,990</p>
+					</div>
+					
+				</div>
+				<div class="pricing-see-more">
+					<a>See More</a>
+				</div>
+			</div>
+	
+			<div class="child" id="c7">
+				<img src="15.jpg">
+				<div class="name-and-price">
+						<p class="name-city">Manali</p>
+				</div>
+				
+				<div class="rating-review-section">
+					<div>
+						<p>⭐⭐⭐⭐ <i class="fa-regular fa-star"></i></p>
+						<p>700 reviews</p>
+					</div>
+					<div class="price">
+						<p class="start"> starting from:</p>
+						<p class="money">Rs.8,990</p>
+					</div>
+					
+				</div>
+				<div class="pricing-see-more">
+					<a>See More</a>
+				</div>
+			</div>
+	
+			<div class="child" id="c8">
+				<img src="16.jpg">
+				<div class="name-and-price">
+						<p class="name-city">Rajasthan</p>
+					
+				</div>
+				
+				<div class="rating-review-section">
+					<div>
+						<p>⭐⭐⭐⭐ <i class="fa-regular fa-star"></i></p>
+						<p>700 reviews</p>
+					</div>
+					<div class="price">
+						<p class="start"> starting from:</p>
+						<p class="money">Rs.6,990</p>
+					</div>
+					
+				</div>
+				<div class="pricing-see-more">
+					<a>See More</a>
+				</div>
+			</div>
+	
+		
+	
+	
+			<div id="rightarrow" onclick="moveleft()">
+				<button class="right-button"><i class="fa-solid fa-arrow-right"></i></button>
+			</div>
+	
 		</div>
-
+		
 	</div>
 	
 <!--pricing ends here-->
@@ -544,11 +546,11 @@
 
 
 <!--Contact Us Form Start here-->
-<div class="contact-section">
+<div class="contact-section" id="contact">
 	<div class="contact-section-image">
-		<img src="25.png" alt="xyx">
+		<img src="33.jpg" alt="xyx">
 	</div>
-	<div class="contact-form" id="contact">
+	<div class="contact-form">
 		<p id="heading">Get In Touch</p>
 	  <form action="action_page.php">
 	
@@ -595,7 +597,7 @@
 						</div>
 						<div>
 							<h3>Find Hotels </h3>
-							<p>via Booking.com</p>
+							<p> <a href="https://www.makemytrip.com/hotels/" target="_blank">via makemytrip.com</a> </p>
 						</div>
 					</div>
 				</td>
@@ -605,8 +607,8 @@
 							<i class=" footer-icon fa-solid fa-car"></i>
 						</div>
 						<div>
-							<h3>Find rental car </h3>
-							<p>via Sunny Cars</p>
+							<h3>Find Rental Car </h3>
+							<p> <a href="https://www.rentalcars.com/?affiliateCode=google_brand&preflang=en&label=rentalcars.com-brand-eHlb3uwTVzTjZgQRFCY5MAS204733750205&ws=&ppc_placement=&ppc_target=&ppc_param1=&ppc_param2=&aceid=&adposition=&ppc_network=g&feeditemid=&ppc_targetid=kwd-29977620&loc_physical_ms=21268&loc_interest_ms=&ppc_device=c&ppc_devicemodel=&gclid=CjwKCAjw-L-ZBhB4EiwA76YzOTtDK4Pq86g4jDquifuU2odX0U4v3Gu-HW0cShzadFs1TxT2AOG0ExoCjWgQAvD_BwE" target="_blank">via rentalcars.com</a> </p>
 						</div>
 					</div>
 				</td>
@@ -619,7 +621,7 @@
 						</div>
 						<div>
 							<h3>Find Flights</h3>
-							<p>via Skyscanner</p>
+							<p> <a href="https://www.cleartrip.com/flights?utm_source=google_fl_search_ad&utm_medium=cpc&utm_campaign=Gen:High-Conv_Exact-DeskTab&dxid=CjwKCAjw-L-ZBhB4EiwA76YzOTP_WNhggDppa3vmTPrgwK9SUInUjfXkFqueTmrSzsXCERJV019wdhoCxuIQAvD_BwE&gclid=CjwKCAjw-L-ZBhB4EiwA76YzOTP_WNhggDppa3vmTPrgwK9SUInUjfXkFqueTmrSzsXCERJV019wdhoCxuIQAvD_BwE" target="_blank">via cleartrip.com</a></p>
 						</div>
 					</div>
 				</td>
@@ -630,7 +632,7 @@
 						</div>
 						<div>
 							<h3> Get a Travel Insurance</h3>
-							<p>via Heymondo</p>
+							<p> <a href="https://travel.policybazaar.com/?newpq=1&pb_source=google&pb_medium=cpc&pb_term=Travel%20insurance&pb_campaign=Travel_Insurance_Exact_Desktop00Travel_Insurance&gclid=CjwKCAjw-L-ZBhB4EiwA76YzOdkDriaHzqVp7chG26g2TGzg4iqYla4UkJJejEpk1IhFlZCiz0bchhoC558QAvD_BwE" target="_blank">via policybazaar.com</a></p>
 						</div>
 					</div>
 				</td>

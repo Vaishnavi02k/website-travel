@@ -153,7 +153,11 @@ nav ul li a{
 		
 }
 
-.content{
+.content {
+	display: flex;
+}
+
+.content p{
 	position: absolute;
 	transform: translate(-50%);
 	top:20%;
@@ -162,37 +166,44 @@ nav ul li a{
 	color:#fff;
 	/* background-color: rgb(0, 0, 0,0.3); */
 	opacity: 0.9;
+	/* overflow: hidden; */
+	overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid orange; /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: 0em; /* Adjust as needed */
+    
+	animation:
+		typing 2.0s steps(20, end),
+        blink-caret .5s step-end infinite;
+}
+/* The typing effect */
+@keyframes typing {
+    from {
+        width: 0
+    }
+
+    to {
+        width: 19%
+    }
 }
 
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+
+    from,
+    to {
+        border-color: transparent
+    }
+
+    50% {
+        border-color: orange
+    }
+}
 /* slide show ends here */
 
 
 /*card*/
-
-.places-lower-heading{
-	/* transform: translate(-50%);
-	position: absolute;
-	transform: translate(-50%); */
-	/* top:103%; */
-	margin-top:2%;  
-	text-align: center;
-	color: #FDD037 ;
-	opacity: 0.9;
-	font-size: 60px;
-	/* opacity: 0.6;	 */
-}
-
-.places-upper-heading{
-	/* position: absolute;
-	transform: translate(-50%);
-	top:108%; */
-	/* margin-left:50%; */
-	font-size: 30px;
-	opacity: 0.8;
-	text-align: center;
-	float: top;
-		
-}
 
 .popular-list{
 	
@@ -319,6 +330,7 @@ nav ul li a{
 
 /*pricing*/
 
+
 .parent{
 	margin-top: 5%;
 	display: flex;
@@ -326,6 +338,32 @@ nav ul li a{
 	align-items: center;
 	/* height: 400px; */
 	flex-direction: row;
+}
+
+.places-lower-heading{
+	/* transform: translate(-50%);
+	position: absolute;
+	transform: translate(-50%); */
+	/* top:103%; */
+	padding-top:2%;  
+	text-align: center;
+	color: #FDD037 ;
+	opacity: 0.9;
+	font-size: 60px;
+	/* opacity: 0.6;	 */
+	display: block;
+}
+
+.places-upper-heading{
+	/* position: absolute;
+	transform: translate(-50%);
+	top:108%; */
+	/* margin-left:50%; */
+	font-size: 30px;
+	opacity: 0.8;
+	text-align: center;
+	/* float: top;		 */
+	display: block;
 }
 
 .child{
@@ -530,7 +568,7 @@ nav ul li a{
 .staff-contact-icon{
 	margin-right:10px;
 	font-size: 15px;
-	color: #029049;
+	color: #57bd09;
 }
 
  /* about us starts here */
@@ -542,6 +580,7 @@ nav ul li a{
 	display: flex;
 	flex-direction:row;
 	padding-top: 4%;
+	/* background-image: url("https://www.transparenttextures.com/patterns/escheresque-dark.png");	;	 */
 }
 
 .about-us-content-parent{
@@ -621,6 +660,7 @@ nav ul li a{
 .choose-us-parent{
 	display: flex;
 	flex-direction: row;
+	/* background-image: url("https://www.transparenttextures.com/patterns/escheresque-dark.png");	;	 */
 }
 .choose-us-child1{
 	width: 50%;
@@ -710,28 +750,40 @@ input[type=text], input[type=email], select, textarea {
    } 
    
 .contact-section{
+	/* background-image: url(30.jpg);
+	background-repeat: no-repeat; */
 	padding-right: 2%;
 	position: relative;
 	align-items:right;
 	display: flex;
 	flex-direction: row;
 	justify-content:space-around;
+	height: 600px;
+	/* background-color: #fff; */
+	/* background-image: url("https://www.transparenttextures.com/patterns/maze-black.png"); */
 	/* background-image: url(27.jpg); */
 	/* object-fit: cover; */
 	/* background-repeat: no-repeat; */
 	/* background-size: 100% 100%; */
+	margin-right: 10%;
+	margin-bottom: 30px;
+
 }
 .contact-form{
-  background-color: rgb(253, 208, 55);
+  /* background-color: rgb(253, 208, 55); */
+  background-color: #00000099;
   box-shadow: 0px 0px 10px rgb(0, 0, 0, 0.4);
-  border-radius: 5px;
+  /* border-radius: 5px; */
+  
   /* background-color: #f2f2f2; */
   padding: 3%;
   padding-bottom: 0.5%;
-  margin: 3%;
-  /* height:660px; */
-  width:40%;
-  border-radius: 15px;
+  /* margin: 3%; */
+  height:600px;
+  width: 45%;
+  border-bottom-right-radius: 20px;
+  border-top-right-radius: 20px;
+  /* border-radius: 15px; */
   /* z-index: 1; */
   
 }
@@ -759,15 +811,26 @@ input[type=text], input[type=email], select, textarea {
 }
 
 .contact-section-image{
-	display: inline-flex;
-	padding-left: 3%;
-	
+	/* display: inline-flex; */
+	padding-left: 17%;
+	/* height: 100%; */
+	/* border-radius:30px; */
+	border-top-left-radius: 20px;
+	border-bottom-left-radius: 20px;
+	overflow: hidden;
+	/* width: 30%; */
+	height: 100%;
 }
 
+
 .contact-section-image img{
-	object-fit: contain;
+	object-fit: cover;
 	/* transform:scale(1.15); */
-	
+	border-top-left-radius: 20px;
+	border-bottom-left-radius: 20px;
+	width: auto;
+	height: 100%;
+	object-position: -60px;
 }
 
 .btn{
@@ -779,7 +842,7 @@ input[type=text], input[type=email], select, textarea {
 	border: 1px solid transparent;
 	border-radius: 10px;
 	margin: auto;
-	background-color: #029049;
+	background-color: #57bd09;
 	transition: all .2s;
 }
 
@@ -797,9 +860,9 @@ input[type=text], input[type=email], select, textarea {
 	display: flex;
 	flex-direction: row;
 	background-color: #000000;
-	
+	opacity: 0.85;
 	color: #fff;
-	padding: 80px 50px;
+	padding: 80px 60px;
 
 }
 
@@ -821,7 +884,7 @@ input[type=text], input[type=email], select, textarea {
 
 .footer-note h1{
 	margin-bottom: 15px;
-	color: #FDD037;
+	/* color: #FDD037; */
 }
 
 .footer-description {
@@ -832,19 +895,26 @@ input[type=text], input[type=email], select, textarea {
 
 .footer-points {
 	font-size: 12px;
-	margin: 20px 5px;
+	margin: 20px 15px;
 	display: flex;
 }
 
 .footer-points h3 {
-	color: #FDD037;
-	font-size: 20px;
+	color: #fff;
+	font-size: 22px;
 }
 
-.footer-icon {
-	font-size: 40px;
-	margin-right: 20px;
+.footer-points a{
 	color: #FDD037;
+	font-size: 15px;
+}
+.footer-points a:hover{
+	color:#57bd09;
+}
+.footer-icon {
+	font-size: 43px;
+	margin-right: 20px;
+	color:#57bd09;
 	/* opacity: 0.8; */
 }
 
@@ -856,7 +926,7 @@ input[type=text], input[type=email], select, textarea {
 .contact-icon{
 	margin-right: 20px;
 	font-size: 30px;
-	color: #FDD037;
+	color: #57bd09;
 }
 .contact-logo{
 	display: flex;
