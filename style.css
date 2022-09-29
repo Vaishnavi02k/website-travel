@@ -150,7 +150,7 @@ nav ul li a{
 	left:50%;
 	font-size: 40px;
 	opacity: 0.75;
-		
+	text-transform: uppercase;
 }
 
 .content {
@@ -174,7 +174,7 @@ nav ul li a{
     letter-spacing: 0em; /* Adjust as needed */
     
 	animation:
-		typing 2.0s steps(20, end),
+		typing 2.0s steps(25, end),
         blink-caret .5s step-end infinite;
 }
 /* The typing effect */
@@ -184,7 +184,7 @@ nav ul li a{
     }
 
     to {
-        width: 19%
+        width: 19%;
     }
 }
 
@@ -210,6 +210,7 @@ nav ul li a{
 	padding:50px 0 50px 0px;
 	display: inline-flex;
 	justify-content: space-around;
+	flex-wrap: wrap;
 }
 
 .card{
@@ -516,6 +517,7 @@ nav ul li a{
 	padding: 1.5%;
 	transition: all 0.3s;
 	/* height: 80%; */
+	/* flex-wrap: wrap; */
 }	
 
 .staff:hover{
@@ -605,6 +607,7 @@ nav ul li a{
 .about-us-image img{
 	height: 100%;
 	width: 100%;
+	object-fit: contain;
 }
 .about-us-content{
 	
@@ -615,7 +618,7 @@ nav ul li a{
 }
 
 .about-us-heading{
-	padding-bottom: 5%;
+	padding-bottom: 2%;
 	font-size: 40px;
 	font-weight: bold;
 	/* color: #FDD037; */
@@ -630,7 +633,7 @@ nav ul li a{
 .read-more{
 	display: flex;
 	justify-content: left;
-	margin-top: 20px;
+	/* margin-top: 5px; */
 }
 
 .read-more a{
@@ -774,7 +777,7 @@ input[type=text], input[type=email], select, textarea {
   background-color: #00000099;
   box-shadow: 0px 0px 10px rgb(0, 0, 0, 0.4);
   /* border-radius: 5px; */
-  
+  flex: 2;
   /* background-color: #f2f2f2; */
   padding: 3%;
   padding-bottom: 0.5%;
@@ -810,6 +813,10 @@ input[type=text], input[type=email], select, textarea {
 	/* background: #ffffff99; */
 }
 
+.contact-form textarea {
+	height: 200px;
+}
+
 .contact-section-image{
 	/* display: inline-flex; */
 	padding-left: 17%;
@@ -820,6 +827,7 @@ input[type=text], input[type=email], select, textarea {
 	overflow: hidden;
 	/* width: 30%; */
 	height: 100%;
+	flex: 3;
 }
 
 
@@ -950,13 +958,307 @@ input[type=text], input[type=email], select, textarea {
 }
 
 
+@media screen and (max-width: 1400px) {
+	.upper-heading{
+		font-size: 35px;
+	}
+}
+
+@media screen and (max-width: 1310px) {
+	.staff {
+		width: 25%;
+	}
+
+	.about-us-content-parent{
+		margin-left: 9%;
+	}
+
+	.about-us-image{
+		margin-right: 8%;
+	}
+
+	.box1{
+		padding-left: 9%;
+	}
+
+	.contact-section-image {
+		padding-left: 10%;
+	}
+
+	.price{
+		padding-right: 0px;
+	}
+}
+
+@media screen and (max-width: 1240px) {
+	.lower-heading {
+		font-size: 120px;
+	}
+	.upper-heading {
+		margin-top: 0px;
+		font-size: 30px;
+
+	}
+	.explore-heading {
+		font-size: 70px;
+	}
+
+	.contact-form #heading {
+		font-size: 40px;
+	}
+
+	label.logo h1{
+		font-size: 35px;
+	}
+
+	nav ul li a {
+		padding: 5px 8px;
+		font-size: 16px;
+	}
+
+	.rating-review-section {
+		margin-top: 7px;
+	}
+	.rating-review-section p{
+		font-size: 14px;
+	} 
+
+	.pricing-see-more {
+		margin-top: 7px;
+	}
+}
+
+@media screen and (max-width: 1100px) {
+	.child {
+		width: 25%;
+	}
+}
 
 
+@media screen and (max-width: 1060px) {
+	.contact-section {
+		height: 550px;
+	}
+
+	.contact-form {
+		height: 550px;
+	}
+
+	.contact-form textarea {
+		height: 170px;
+	}
+
+	.explore-parent {
+		width: 70%;
+		padding: 6%;
+		margin-bottom: 0px;
+	}
+
+	.explore-heading {
+		font-size: 60px;
+	}
+
+	.organization {
+		height: 450px;
+	}
+	.about-us-heading {
+		font-size: 35px;
+	}
+	.about-us-info p{
+		font-size: 16px;
+	}
+
+	.read-more a {
+		padding: 5px;
+		font-size: 13px;
+	}
+
+	.box3 h1, .box4 h1 {
+		font-size: 25px;
+	}
+
+	.box3 p, .box4 p{
+		font-size: 13px;
+	}
+
+	.contact-section {
+		height: 500px;
+	}
+
+	.contact-form {
+		height: 500px;
+	}
+
+	.contact-form #heading {
+		margin-bottom: 5px;
+	}
+
+	.contact-form textarea {
+		height: 140px;
+	}
+
+	.popular-list{
+		justify-content: space-evenly;
+	}
+
+	.card{
+		width: 43%;
+		margin-bottom: 3.5%;
+
+	}
+
+	.card-text h2{
+		font-size: 35px;
+		margin: 5%;
+	}
+
+	nav ul li{
+		margin-left: 2px;
+	}
+
+	.nav ul li a {
+		padding: 4px 4px;
+		font-size: 10px;
+	}
+	.upper-heading{
+		font-size: 25px;
+		top:56%;
+	}
+	.lower-heading{
+		font-size: 100px;
+	}
+}
+
+@media screen and (max-width: 1020px) {
+	.staff img {
+		height: 200px;
+	}
+	.organization {
+		height: auto;
+	}
+
+	label.logo {
+		padding: 0 30px;
+	}
+
+	nav ul{
+		margin-right: 10px;
+	}
+}
+
+@media screen and (max-width: 950px) {
+	label.logo h1{
+		font-size: 30px;
+	}
+
+	nav ul li a {
+		font-size: 14px;
+	}
+
+	.box3 h1, .box4 h1{
+		font-size: 18px;
+	}
+
+	.footer-icon{
+		font-size: 35px;
+	}
+	.footer{
+		padding: 40px 30px;
+	}
+
+	.footer-description{
+		font-size: 15px;
+	}
+	.footer-points{
+		margin: 10px 8px;
+	}
+	.footer-note{
+		height: 250px;
+	}
+
+	.footer-points h3{
+		font-size: 18px;
+	}
+	.footer-points p{
+		font-size: 10px;
+	}
+}
+
+@media screen and (max-width: 875px) {
+	@keyframes typing {
+		from {
+			width: 0
+		}
+	
+		to {
+			width: 26%;		
+		}
+	}
+	.upper-heading {
+		font-size: 22px;
+		top: 53%;
+	}
+
+	.lower-heading {
+		font-size: 80px;
+	}
+
+	.content p{
+		font-size: 25px;
+	}
+
+	.staff-name h2{
+		font-size: 20px;
+	}
+
+	.about-us-heading{
+		font-size: 30px;
+	}
+
+	.box3 h1, .box4 h1{
+		font-size: 15px;
+	}
+
+	.contact-section {
+		height: 450px;
+	}
+
+	.contact-form{
+		height: 450px;
+	}
+
+	.contact-form textarea{
+		height: 120px;
+	}
+
+	.contact-form input{
+		margin-top: 7px;
+	}
 
 
+	
 
+	/* number of cards 2 */
+}
 
+@media screen and (max-width:855px) {
+	label.logo{
+		padding: 0 20px;
+		
+	}
 
+	label.logo h1{
+		font-size: 25px;
+	}
 
+	nav ul li a{
+		font-size: 12px;
+	}
 
+}
 
+@media screen and (max-width:780px) {
+	.explore-about{
+		font-size: 15px;
+	}
+}

@@ -1,5 +1,28 @@
 var left=1;
-		var right=4;
+var right=4;
+
+function myFunction(x) {
+	if (x.matches) { // If media query matches
+		left=1;
+		right=3;
+	}
+  }
+  
+var x = window.matchMedia("(max-width: 1100px)")
+myFunction(x) // Call listener function at run time
+x.addEventListener(myFunction) // Attach listener function on state changes
+
+// function myFunction2(y) {
+// 	if (y.matches) { // If media query matches
+// 		left=1;
+// 		right=2;
+// 	}
+//   }
+  
+// var y = window.matchMedia("(max-width: 865px)")
+// myFunction2(y) // Call listener function at run time
+// y.addEventListener(myFunction2) // Attach listener function on state changes
+
 		function show(){
 			for(i=left;i<=right;i++){
 				document.getElementById("c"+i).style.display="inline-block";
@@ -14,7 +37,7 @@ var left=1;
 
 		function moveleft(){
 
-			if (left<=4 && right<=8){
+			if (right<8){
 				document.getElementById("c"+left).style.display="none";
 			left+=1;
 			right+=1;
@@ -40,7 +63,7 @@ var left=1;
 		}
 
 		function moveright(){
-			if (left>=1 && right>=5){
+			if (left>1){
 				document.getElementById("c"+right).style.display="none";
 			left-=1;
 			right-=1;
