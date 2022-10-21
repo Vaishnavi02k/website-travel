@@ -3,25 +3,32 @@ var right=4;
 
 function myFunction(x) {
 	if (x.matches) { // If media query matches
-		left=1;
 		right=3;
 	}
   }
   
 var x = window.matchMedia("(max-width: 1100px)")
 myFunction(x) // Call listener function at run time
-x.addEventListener(myFunction) // Attach listener function on state changes
+// x.addEventListener(myFunction) // Attach listener function on state changes
 
-// function myFunction2(y) {
-// 	if (y.matches) { // If media query matches
-// 		left=1;
-// 		right=2;
-// 	}
-//   }
+function myFunction2(y) {
+	if (y.matches) { // If media query matches
+		right=2;
+	}
+  }
   
-// var y = window.matchMedia("(max-width: 865px)")
-// myFunction2(y) // Call listener function at run time
+var y = window.matchMedia("(max-width: 875px)")
+myFunction2(y) // Call listener function at run time
 // y.addEventListener(myFunction2) // Attach listener function on state changes
+
+function myFunction3(z) {
+	if (z.matches) { // If media query matches
+		right=1;
+	}
+  }
+  
+var z = window.matchMedia("(max-width: 575px)")
+myFunction3(z) // Call listener function at run time
 
 		function show(){
 			for(i=left;i<=right;i++){

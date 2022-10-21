@@ -1236,7 +1236,9 @@ input[type=text], input[type=email], select, textarea {
 	}
 
 
-	
+	.child {
+		width: 33%;
+	}
 
 	/* number of cards 2 */
 }
@@ -1255,10 +1257,491 @@ input[type=text], input[type=email], select, textarea {
 		font-size: 12px;
 	}
 
+	.staff {
+		width: 35%;
+	}
+
+	.organization .mask{
+		/* display: flex; */
+		/* flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		flex-wrap: wrap-reverse; */
+		overflow:scroll;
+		justify-content: left;
+
+	}
 }
 
 @media screen and (max-width:780px) {
 	.explore-about{
 		font-size: 15px;
 	}
+	.upper-heading{
+		font-size: 20px;
+	}
+	.choose-us-parent {
+		flex-direction: column;
+		justify-content: center;
+		padding: 3% 10%;
+	}
+
+	.box1 {
+		width: 100%;
+		padding: 0;
+	}
+
+	.choose-us-child2 {
+		width: 100%;
+		margin: 0;
+		padding: 0;
+		padding-top: 3%;
+	}
+
+	.box2 , .box4 {
+		width: 50%;
+	}
+
+	.box3, .box5{
+		padding-right: 0px;
+	}
+
+	.box3 h1, .box4 h1 {
+		font-size: 18px;
+	}
+	.box3 p, .box4 p{
+		font-size: 16px;
+	}
+
+	.contact-section {
+		height: 400px;
+		padding-right: 0;
+	}
+
+	.contact-section-image{
+		padding-left: 12%;
+	}
+
+	.contact-form {
+		height: 400px;
+	}
+
+	.contact-form #heading {
+		font-size: 35px;
+	}
+
+	.contact-form input, .contact-form select, .contact-form textarea {
+		font-size: 10px;
+	}
+
+	.contact-form textarea{
+		height: 100px;
+	}
+	td {
+		display: flex;
+	}
+	.footer-note{
+		height: auto;
+		flex: 1.5;
+	}
+
+	.navbar li {
+		margin: 0px;
+	}
+
+	label.logo{
+		padding: 0px 5px 0px 10px;
+	}
+}
+
+@media screen and (max-width: 740px) {
+	.child{
+		width: 37%;
+	}
+	.about-us {
+		flex-direction: column-reverse;
+		padding: 3% 10%;
+	}
+
+	.about-us-content-parent {
+		width: 100%;
+		margin: 0;
+	}
+
+	.about-us-image{
+		width: 100%;
+		margin: 0;
+	}
+
+}
+
+@media screen and (max-width: 700px) {
+	.upper-heading{
+		font-size: 18px;
+	}
+}
+
+
+@media screen and (max-width: 680px) {
+	.navbar{
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		/* height: auto; */
+	}
+
+	.navbar ul{
+		margin: 0;
+	}
+
+	label.logo{
+		line-height: normal;
+
+	}
+
+	.navbar ul li{
+		line-height: 30px;
+	}
+
+	.contact-form #heading{
+		font-size: 30px;
+	}
+
+	.lower-heading{
+		font-size: 65px;
+	}
+
+	.upper-heading{
+		top: 51%;
+	}
+
+	.places-lower-heading {
+		font-size: 50px;
+	}
+
+	.places-upper-heading{
+		font-size: 25px;
+	}
+
+	.popular-list {
+		padding: 30px 0px 30px;
+	}
+
+	.card-text h2 {
+		font-size: 25px;
+	}
+
+	.explore-heading, .places-lower-heading {
+		font-size: 40px;
+	}
+
+	.explore-sub-heading, .places-upper-heading {
+		font-size: 18px;
+	}
+
+	.footer-note h1 {
+		font-size: 27px;
+	}
+
+
+}
+
+
+@media screen and (max-width: 630px) {
+	.upper-heading{
+		font-size: 16px;
+	}
+	.popular-list {
+		padding: 25px 0px 25px;
+	}
+
+	.child{
+		width: 45%;
+	}
+	.slideshow{
+		height: 50vh;
+	}
+
+	.content p{
+		top:17%
+	}
+	.lower-heading{
+		top:25%
+	}
+	.upper-heading{
+		top:35%
+	}
+}
+
+
+@media screen  and (max-width: 560px){
+
+	.contact-section{
+		height: 350px;
+	}
+
+	.contact-form{
+		height: 350px;
+	}
+	.contact-form #heading {
+		font-size: 25px;
+	}
+	input[type=text], input[type=email], select, textarea{
+		padding: 7px;
+	}
+
+	.staff{
+		width: 43%;
+	}
+
+	.lower-heading{
+		font-size: 60px;
+	}
+
+	.upper-heading{
+		font-size: 14px;
+	}
+
+	.content p{
+		font-size: 20px;
+	}
+}
+
+
+@media screen and (max-width: 510px) {
+	.footer {
+		flex-direction: column;
+	}
+
+	td{
+		display: table-cell;
+	}
+
+	/* .contact-point {
+		justify-content: center;
+	} */
+
+	.about-us-info p{
+		font-size: 12px;
+	}
+
+	.about-us{
+		font-size: 20px;
+	}
+
+	.read-more a{
+		font-size:10px;
+	}
+
+	.box3 p, .box4 p{
+		font-size: 12px;
+	}
+
+	.footer-description{
+		font-size: 12px;
+	}
+	.footer-note h1{
+		font-size: 20px;
+	}
+	.footer-points h3{
+		font-size: 14px;
+	}
+	.footer-points a{
+		font-size: 10px;
+	}
+	.contact-us{
+		margin-top: 20px;
+	}
+	.contact-text h1{
+		font-size: 20px;
+	}
+	.contact-text h4{
+		font-size: 12px;
+	}
+	.social-logo{
+		height: 10px;
+		width: 10px;
+	}
+}
+
+@media screen and (max-width:490px) {
+
+	.upper-heading{
+		font-size: 12px;
+	}
+
+	.lower-heading{
+		font-size: 50px;
+	}
+
+	.child{
+		width: 50%;
+	}
+
+	.explore-about{
+		font-size: 10px;
+	}
+	.explore-heading, .places-lower-heading{
+		font-size: 30px;
+	}
+	.explore-sub-heading, .places-upper-heading{
+		font-size: 15px;
+	}
+	.content p{
+		font-size: 16px;
+	}
+
+	.contact-section-image {
+		display: none;
+	}
+	.contact-form{
+		margin: 3% 18%;
+	}
+	.contact-section{
+		margin-right:0px ;
+	}
+	.rating-review-section p{
+		font-size: 12px;
+	}
+	.pricing-see-more a{
+		padding: 7px;
+		margin-bottom: 15px;
+	}
+}
+
+@media screen and (max-width:465px) {
+	nav ul li a{
+		font-size: 10px;
+	}
+	
+	.staff{
+		width: 200px;
+		height: 250px;
+	}
+
+	
+	.parent{
+		height: 200px;
+		margin-top:90px;
+		margin-bottom: 50px;
+	}
+
+	.child{
+		width:200px;
+	}
+	
+	.child img{
+		height: 150px;
+	}
+
+	.staff-name h2{
+		font-size: 13px;
+	}
+	.staff-contact-info{
+		font-size: 10px;
+	}
+	.staff img{
+		height: 160px;
+	}
+	 
+	
+	
+	/* .staff{
+		margin-top:60px
+	} */
+}
+
+@media screen and (max-width:425px) {
+	nav ul li a{
+		padding: 3px 5px;
+	}
+	.popular-list{
+		padding: 20px 0px 20px;
+	}
+	.lower-heading{
+		font-size: 30px;
+		top: 22%;
+	}
+	.upper-heading{
+		font-size:10px;
+		top: 27%;
+	}
+
+	.popular-list{
+		display: flex;
+		flex-direction: column;
+		flex-wrap: nowrap;
+		
+		/* width: 100px;
+		margin-right: 12%;
+		margin-left:12% */
+		/* padding-left: 20px; */
+		align-items: center;
+
+	}
+	.card{
+		/* justify-content:space-around; */
+		width:200px;
+		height: 120px;
+	}
+	.card-text h2{
+		font-size: 20px;
+	}
+
+	td{
+		display:flex;
+	}
+}
+
+@media screen and (max-width:385px){
+	nav ul li a{
+		padding: 2px 4px;
+	}
+	.rating-review-section{
+		padding: 0 10px 5px 10px;
+	}
+	.explore-sub-heading{
+		font-size: 12px;
+	}
+	.explore-heading{
+		font-size: 25px;
+	}
+}
+
+@media screen and (max-width:355px) {
+	nav ul li a{
+		font-size: 8px;
+		padding: 2px;
+	}
+	.upper-heading{
+		font-size: 6px;
+		top: 32%;
+	}
+	.lower-heading{
+		font-size: 25px;
+		top: 28%;
+		
+	}
+
+	#leftarrow button, #rightarrow button{
+		font-size: 12px;
+	}
+
+	.parent{
+		justify-content:space-around;
+
+	}
+	.content p{
+		font-size: 8px;
+	}
+	.choose-us{
+		flex-direction: column;
+	}
+	.box2, .box4, .box3,.box5{
+		width: 100%;
+	}
+	.about-us-heading{
+		font-size: 20px;
+	}
+	
 }
